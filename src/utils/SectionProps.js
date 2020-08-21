@@ -42,7 +42,7 @@ export const SectionSplitProps = {
   defaults: {
     ...SectionShared.defaults,
     invertMobile: false,
-    invertDesktop: false,
+    invertDesktop: true,
     alignTop: false,
     imageFill: false
   }
