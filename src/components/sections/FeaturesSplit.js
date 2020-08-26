@@ -29,7 +29,6 @@ const FeaturesSplit = ({
 
   const outerClasses = classNames(
     'features-split section',
-    topOuterDivider && 'has-top-divider',
     bottomOuterDivider && 'has-bottom-divider',
     hasBgColor && 'has-bg-color',
     invertColor && 'invert-color',
@@ -38,7 +37,6 @@ const FeaturesSplit = ({
 
   const innerClasses = classNames(
     'features-split-inner section-inner',
-    topDivider && 'has-top-divider',
     bottomDivider && 'has-bottom-divider'
   );
 
@@ -60,9 +58,12 @@ const FeaturesSplit = ({
       className={outerClasses}
     >
       <div className="container">
+      <div className="pentagon-1 reveal-from-right"></div>
+            <div className="pentagon-2 reveal-from-left"></div>
         <div className={innerClasses}>
           {/* <SectionHeader data={sectionHeader} className="center-content" /> */}
           <div className={splitClasses}>
+            
 
             <div className="split-item">
             

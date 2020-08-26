@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+// Atomic 47 customizations
+// Global ------------------ // 
 
 .align-center {
     align-self: center;
 }
+
+// Hero ------------------ // 
 
 // Hide hero image on mobile devices
 .hero-figure {
@@ -36,10 +39,7 @@
     }
 }
 
-// Feature tiles remove background color
-.tiles-item-inner .features-tiles-item-image {
-    background-color: initial;
-}
+
 
 // Adding border radius to input fields
 
@@ -115,10 +115,52 @@ input.form-input {
     background-color: #113d69;
 }
 
+// Feature Tiles -------------- // 
+
+.features-tiles {
+    // Top padding to section header
+    .features-tiles-inner .section-header {
+        padding-top: 80px;
+    }
+
+    // Feature tiles remove background color
+.tiles-item-inner .features-tiles-item-image {
+    background-color: initial;
+}
+}
+
+// Features Split (App Preview) -- // 
+
+.pentagon-1 {
+    position: absolute;
+    display: none;
+    height: 284px;
+    width: 275px;
+    right: -86px;
+    background-image: url("../../../images/Pentagon-Orange.svg");
+    background-size: cover;
+    filter: brightness(0.95);
+}
+
+.pentagon-2 {
+    position: absolute;
+    display: none;
+    height: 550px;
+    width: 574px;
+    left: 10vw;
+    top: 200px;
+    background-image: url("../../../images/Pentagon-Green.svg");
+    background-size: cover;
+    filter: brightness(0.95);
+}
+
+// Footer -------------- // 
+
 // Coloring Footer
 .site-footer::before {
     background-color: #dedede;
 }
+
 // Footer shadow
 footer.site-footer.center-content-mobile:after {
     content: "";
@@ -130,9 +172,17 @@ footer.site-footer.center-content-mobile:after {
     background: radial-gradient(circle, rgba(36, 35, 37, 0.29) 0%, rgba(14, 14, 17, 0) 80%);
 }
 
+// Footer overtop of reveal from bottom animations
 footer.site-footer.center-content-mobile {
     z-index: 10;
 }
+
+// Footer social icon alignment
+.footer-bottom.space-between {
+    align-items: flex-end;
+    padding-top: 0px;
+}
+
 
 @media (min-width: 641px) {
     .features-split-inner .split-wrap .split-item {
@@ -156,6 +206,9 @@ footer.site-footer.center-content-mobile {
             width: 300px;
         }
     }
+    .footer-social {
+        padding-right: 10px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -163,15 +216,21 @@ footer.site-footer.center-content-mobile {
         display: block;
     }
     .site-header .brand {
+        .header-logo {
+            width: 900px;
+            
+            left: -630px;
+        }
+        
         .m-0 a {
             top: 20px;
-            left: 20px;
+    left: 630px;
+}
         }
         h1 {
             top: -7px;
-            left: 0px;
         }
-    }
+    
 }
 
 @media (min-width: 821px) {
@@ -196,6 +255,15 @@ footer.site-footer.center-content-mobile {
     .features-split-inner .split-wrap .split-item {
         flex-direction: row;
     }
+    // Features Split (App Preview) -- // 
+
+.pentagon-1 {
+    display: block;
+}
+
+.pentagon-2 {
+    display: block;
+}
 }
 
 @media (min-width: 1128px) {

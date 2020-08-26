@@ -39,7 +39,7 @@ const FeaturesTiles = ({
   );
 
   const tilesClasses = classNames(
-    'tiles-wrap center-content',
+    'tiles-wrap',
     pushLeft && 'push-left'
   );
 
@@ -55,7 +55,7 @@ const FeaturesTiles = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          <SectionHeader data={sectionHeader} />
           <div className={tilesClasses}>
 
             <div className="tiles-item reveal-from-bottom">
