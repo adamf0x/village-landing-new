@@ -73,10 +73,10 @@ const FeaturesSplit = ({
                   Coming Soon!
                   </div>
                 <h3 className="mt-0 mb-12">
-                  The Village App
+                The Village App
                   </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                The upcoming Village Mobile app is designed to activate your hyperlocal community when you need it. Inverting the “social-network” model on its head, Village keeps you engaged with tightly knit real world communities, and builds new ones when you need to. We are presently in the Alpha Stage of Development but will be coming to the app store soon.
                   </p>
               </div>
 

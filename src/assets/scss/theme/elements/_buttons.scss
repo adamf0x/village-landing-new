@@ -1,11 +1,11 @@
 // Atomic 47 customizations
-// Global ------------------ // 
+// Global ------------------ //
 
 .align-center {
     align-self: center;
 }
 
-// Hero ------------------ // 
+// Hero ------------------ //
 
 // Hide hero image on mobile devices
 .hero-figure {
@@ -15,6 +15,15 @@
 // Give hero module padding for mobile
 .hero-content {
     padding-bottom: 45px;
+}
+
+.hero-content h1 {
+    font-size: 44px;
+}
+
+.hero-content .split-item .container-xs {
+    margin-left: initial;
+    margin-right: initial;
 }
 
 // Logo styling for mobile devices
@@ -38,8 +47,6 @@
         pointer-events: none; // TODO: Remove this when you have a properly sized logo
     }
 }
-
-
 
 // Adding border radius to input fields
 
@@ -66,10 +73,10 @@ input.form-input {
     position: absolute;
     img {
         position: relative;
-        left: -300px;
-        top: 50px;
-        filter: saturate(1) opacity(0.15);
-        width: 500px;
+        left: -200px;
+        top: 35px;
+        filter: saturate(1) opacity(0.15) brightness(0.2);
+        width: 350px;
         z-index: -1;
     }
 }
@@ -115,21 +122,53 @@ input.form-input {
     background-color: #113d69;
 }
 
-// Feature Tiles -------------- // 
+// Feature Tiles -------------- //
 
 .features-tiles {
     // Top padding to section header
     .features-tiles-inner .section-header {
-        padding-top: 80px;
+        padding-top: 100px;
     }
 
     // Feature tiles remove background color
-.tiles-item-inner .features-tiles-item-image {
-    background-color: initial;
-}
+    .tiles-item-inner .features-tiles-item-image {
+        background-color: initial;
+    }
+
+    .section-header {
+
+        .header-text {
+            width: 80%;
+            padding-left: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        > a {
+            margin-bottom: 40px;
+            display: block;
+            position: relative;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    // .features-tiles-item-image {
+    //     display: block;
+
+    //     > img {
+    //         margin-left: auto;
+    //         margin-right: auto;
+    //     }
+    // }
 }
 
-// Features Split (App Preview) -- // 
+.hover-modal {
+    position: absolute;
+    top: calc(50% - (62px / 2));
+    left: calc(50% - (88px / 2));
+}
+
+// Features Split (App Preview) -- //
 
 .pentagon-1 {
     position: absolute;
@@ -154,7 +193,7 @@ input.form-input {
     filter: brightness(0.95);
 }
 
-// Footer -------------- // 
+// Footer -------------- //
 
 // Coloring Footer
 .site-footer::before {
@@ -183,8 +222,19 @@ footer.site-footer.center-content-mobile {
     padding-top: 0px;
 }
 
-
 @media (min-width: 641px) {
+    h2 {
+        font-size: 32px;
+    }
+
+    .cta-split {
+        display: block;
+    }
+
+    .features-tiles-inner .section-header {
+        padding-bottom: 48px;
+    }
+
     .features-split-inner .split-wrap .split-item {
         flex-direction: column;
     }
@@ -212,28 +262,38 @@ footer.site-footer.center-content-mobile {
 }
 
 @media (min-width: 768px) {
+.cta-split {
+    display: flex;
+}
+
     .hero-figure {
         display: block;
+        padding-left: 15px;
     }
     .site-header .brand {
         .header-logo {
             width: 900px;
-            
+
             left: -630px;
         }
-        
+
         .m-0 a {
             top: 20px;
-    left: 630px;
-}
+            left: 630px;
         }
-        h1 {
-            top: -7px;
-        }
-    
+    }
+    h1 {
+        top: -7px;
+    }
 }
 
 @media (min-width: 821px) {
+    .hero-background-image img {
+        left: -220px;
+        top: 35px;
+        width: 400px;
+    }
+
     .container .split-wrap .split-item .split-item-image {
         min-width: 300px;
         max-width: 300px;
@@ -255,20 +315,50 @@ footer.site-footer.center-content-mobile {
     .features-split-inner .split-wrap .split-item {
         flex-direction: row;
     }
-    // Features Split (App Preview) -- // 
 
-.pentagon-1 {
-    display: block;
-}
+    .features-tiles .section-header { 
+        .header-text {
+        width: 60%;
+        }
+        a {
+            width: 60%;
+        }
+    
+    }
 
-.pentagon-2 {
-    display: block;
-}
+    // Features Split (App Preview) -- //
+
+    .pentagon-1 {
+        display: block;
+    }
+
+    .pentagon-2 {
+        display: block;
+    }
 }
 
 @media (min-width: 1128px) {
+    .hero-background-image img {
+        left: -300px;
+        top: 45px;
+        width: 500px;
+    }
     .container .split-wrap .split-item .split-item-content {
         width: 488px;
+    }
+    .features-tiles {
+    
+        .section-header {
+            display: flex;
+            flex-direction: row;
+            a {
+                    margin-bottom: 0px;
+                    display: inline-flex;
+                    width: initial;
+                    margin-left: initial;
+                    margin-right: initial;
+                }
+        }
     }
 }
 

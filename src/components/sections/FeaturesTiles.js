@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
+import Modal from '../elements/Modal';
 import Image from '../elements/Image';
 
 const propTypes = {
@@ -23,6 +24,18 @@ const FeaturesTiles = ({
   ...props
 }) => {
 
+  const [videoModalActive, setVideomodalactive] = useState(false);
+
+  const openModal = (e) => {
+    e.preventDefault();
+    setVideomodalactive(true);
+  }
+
+  const closeModal = (e) => {
+    e.preventDefault();
+    setVideomodalactive(false);
+  }
+
   const outerClasses = classNames(
     'features-tiles section',
     topOuterDivider && 'has-top-divider',
@@ -43,10 +56,10 @@ const FeaturesTiles = ({
     pushLeft && 'push-left'
   );
 
-  const sectionHeader = {
-    title: 'What is Village?',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
-  };
+  // const sectionHeader = {
+  //   title: '',
+  //   paragraph: ' '
+  // };
 
   return (
     <section
@@ -55,9 +68,42 @@ const FeaturesTiles = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} />
           <div className={tilesClasses}>
-
+            <div class="section-header">
+            <a
+                  data-video="https://player.vimeo.com/video/174002812"
+                  href="#0"
+                  aria-controls="video-modal"
+                  onClick={openModal}
+                  >
+                    <Image
+                      src={require('./../../assets/images/youtube-vid-image.png')}
+                      alt="Hero"
+                      width={674}
+                      height={647} />
+                      <Image
+                      src={require('./../../assets/images/yt_icon_mono_dark.png')}
+                      alt="Hero"
+                      width={88}
+                      height={62}
+                      className="hover-modal" />
+                  </a>
+                  <Modal
+              id="video-modal"
+              show={videoModalActive}
+              handleClose={closeModal}
+              video="https://player.vimeo.com/video/174002812"
+              videoTag="iframe" />
+              <div class="header-text">
+                <h2 class="mt-0 text-color-secondary mb-16">
+                  We Get by with A little Help from our Friends
+              </h2>
+                <p class="m-0">
+                  The core of Village’s mission is to build real world engagement with our local communities so we can all get a little more support when we need it. No one knows the power of this like our Founder Ashley. Listen to her story to understand the inspiration for Village and how one little surprise can change everything.
+                </p>
+              </div>
+              
+            </div>
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -71,10 +117,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Stay in the loop
+                    Needs Specific Messaging
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    Quick and efficient, needs-specific messaging allows you to send a request without the need for justification. One notification sent to multiple people without annoying group messaging. Get the help you need and the break you deserve.
                     </p>
                 </div>
               </div>
@@ -93,10 +139,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                  Stay in the loop
+                    Hyper Local Connections
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    Build connection with those who are geographically closest to you. Whether you need help moving a couch, someone to put out your garbage cans while you’re away or you’re looking for a friend who shares similar interests, Village breaks down barriers and allows you to explore your own neighborhood.
                     </p>
                 </div>
               </div>
@@ -115,10 +161,10 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                  Stay in the loop
+                    Choose who sees requests
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    By curating your community, you are in charge of who gets which requests. Sort your contacts into groups depending on which need they fulfill.
                     </p>
                 </div>
               </div>

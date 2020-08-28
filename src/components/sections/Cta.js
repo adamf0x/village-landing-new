@@ -53,8 +53,9 @@ const Cta = ({
         >
           <div className="cta-slogan">
             <h3 className="m-0 invert-color">
-              Let's keep in touch!
+            Join The Movement
               </h3>
+              <p className="invert-color">Do you believe in community? Join our mailing list to receive exclusive updates, engage with upcoming campaigns, and be among the fist to beta test Village’s mobile app! </p>
           </div>
           <div className="cta-action">
             <Input id="newsletter" type="email" label="Subscribe" labelHidden hasIcon="right" placeholder="Your best email">

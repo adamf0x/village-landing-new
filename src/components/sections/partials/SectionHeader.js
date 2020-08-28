@@ -38,12 +38,13 @@ const SectionHeader = ({
           {...props}
           className={classes}
         >
-          <div className="container-xs">
+          <div>
             {children}
             {data.title &&
               <Component className={
                 classNames(
                   'mt-0',
+                  'text-color-secondary',
                   data.paragraph ? 'mb-16' : 'mb-0'
                 )}>{data.title}</Component>
             }
