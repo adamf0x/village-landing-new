@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e0867118.chunk.css",
+    "main.js": "/static/js/main.f73243f9.chunk.js",
+    "main.js.map": "/static/js/main.f73243f9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b8b9f84b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b8b9f84b.js.map",
+    "static/js/2.1d72f191.chunk.js": "/static/js/2.1d72f191.chunk.js",
+    "static/js/2.1d72f191.chunk.js.map": "/static/js/2.1d72f191.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.449cc6c8c79585be90d22c6c5f0e78b2.js": "/precache-manifest.449cc6c8c79585be90d22c6c5f0e78b2.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e0867118.chunk.css.map": "/static/css/main.e0867118.chunk.css.map",
+    "static/js/2.1d72f191.chunk.js.LICENSE.txt": "/static/js/2.1d72f191.chunk.js.LICENSE.txt",
+    "static/media/4.png": "/static/media/4.d1d81699.png",
+    "static/media/Chat-bubble.svg": "/static/media/Chat-bubble.2f6ddb6f.svg",
+    "static/media/Home-bubble.svg": "/static/media/Home-bubble.f23dc85e.svg",
+    "static/media/style.scss": "/static/media/illustration-section-02.63d0555d.svg",
+    "static/media/Request-bubble.svg": "/static/media/Request-bubble.218254fc.svg",
+    "static/media/Village-iPhoneMock.png": "/static/media/Village-iPhoneMock.364ee163.png",
+    "static/media/family-hero-cropped.png": "/static/media/family-hero-cropped.fa103ad8.png",
+    "static/media/youtube-vid-image.png": "/static/media/youtube-vid-image.dd3d0c09.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b8b9f84b.js",
+    "static/js/2.1d72f191.chunk.js",
+    "static/css/main.e0867118.chunk.css",
+    "static/js/main.f73243f9.chunk.js"
+  ]
+}
