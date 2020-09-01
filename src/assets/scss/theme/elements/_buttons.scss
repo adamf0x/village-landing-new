@@ -172,7 +172,6 @@ input.form-input {
 
 .cta .cta-inner .cta-action.email-input {
     position:relative;
-    width: 60%;
     > div {
         position: relative;
     }
@@ -288,6 +287,10 @@ footer.site-footer.center-content-mobile {
 
     .cta .cta-split {
         display: block;
+    }
+
+    .cta .cta-inner .cta-action.email-input {
+        width: 60%;
     }
 
     .features-tiles-inner .section-header {
