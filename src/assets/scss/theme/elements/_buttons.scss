@@ -71,6 +71,7 @@ input.form-input {
 
 .hero-background-image {
     position: absolute;
+    pointer-events:none;
     img {
         position: relative;
         left: -200px;
@@ -78,7 +79,54 @@ input.form-input {
         filter: saturate(1) opacity(0.15) brightness(0.2);
         width: 350px;
         z-index: -1;
+        pointer-events:none;
     }
+}
+
+.email-input input {
+    background-color: #eceded;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #2d7779;
+    border-radius: 15px;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding: 11px 15px;
+    height: 48px;
+    color: #151719;
+    box-shadow: none;
+    max-width: 100%;
+    width: 100%;
+    outline: none !important;
+}
+
+.email-input button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 16px;
+    display: inline-flex;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    font-weight: 600;
+    padding: 11px 31px;
+    height: 48px;
+    text-decoration: none !important;
+    color: #ECEDED;
+    background-color: #113d69;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: inherit;
+    white-space: nowrap;
+    transition: background .15s ease;
+    outline: none;
 }
 
 .hero.section:before {
@@ -120,6 +168,17 @@ input.form-input {
 // Coloring CTA
 .cta .cta-inner {
     background-color: #113d69;
+}
+
+.cta .cta-inner .cta-action.email-input {
+    position:relative;
+    width: 60%;
+    > div {
+        position: relative;
+    }
+    button {
+        background-color: #499396;
+    }
 }
 
 // Feature Tiles -------------- //
@@ -227,7 +286,7 @@ footer.site-footer.center-content-mobile {
         font-size: 32px;
     }
 
-    .cta-split {
+    .cta .cta-split {
         display: block;
     }
 
@@ -262,8 +321,12 @@ footer.site-footer.center-content-mobile {
 }
 
 @media (min-width: 768px) {
-.cta-split {
+.cta .cta-split {
     display: flex;
+    .cta-slogan {
+    margin-right: 35px;
+    width: calc(100% - 250px);
+    }
 }
 
     .hero-figure {

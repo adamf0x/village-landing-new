@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import Input from '../elements/Input';
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 const propTypes = {
   ...SectionProps.types,
@@ -13,6 +14,10 @@ const defaultProps = {
   ...SectionProps.defaults,
   split: false
 }
+
+const SimpleForm = () => <MailchimpSubscribe url={url}/>
+
+const url = "https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d";
 
 const Cta = ({
   className,
@@ -57,12 +62,8 @@ const Cta = ({
               </h3>
               <p className="invert-color">Do you believe in community? Join our mailing list to receive exclusive updates, engage with upcoming campaigns, and be among the fist to beta test Village’s mobile app! </p>
           </div>
-          <div className="cta-action">
-            <Input id="newsletter" type="email" label="Subscribe" labelHidden hasIcon="right" placeholder="Your best email">
-              <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#ef7332" />
-              </svg>
-            </Input>
+          <div className="cta-action email-input">
+          <SimpleForm className="form-input" />
           </div>
         </div>
       </div>
