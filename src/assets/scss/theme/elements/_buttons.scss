@@ -130,6 +130,21 @@ input.form-input {
     outline: none;
 }
 
+.hero-content .email-input {
+    > form {
+        position: relative;
+    }
+
+    button {
+        top: 0px;
+        bottom: initial;
+    }
+
+    .msg-alert p {
+        color: white !important;
+    }
+}
+
 .hero.section:before {
     // Diagonal Hero
     content: "";
@@ -291,7 +306,7 @@ footer.site-footer.center-content-mobile {
     }
 
     .cta .cta-inner .cta-action.email-input {
-        width: 60%;
+        flex-grow: 1;
     }
 
     .features-tiles-inner .section-header {
@@ -330,6 +345,7 @@ footer.site-footer.center-content-mobile {
     .cta-slogan {
     margin-right: 35px;
     width: calc(100% - 250px);
+    max-width: 50%;
     }
 }
 

@@ -6,12 +6,7 @@ import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
 import Input from '../elements/Input';
-import MailchimpSubscribe from "react-mailchimp-subscribe"
-
-const url = "https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d";
- 
-
-const SimpleForm = () => <MailchimpSubscribe url={url}/>
+import Mailchimp from 'react-mailchimp-form';
 
 const propTypes = {
   ...SectionProps.types
@@ -84,7 +79,17 @@ const Hero = ({
                       Village is a needs-based messaging app that allows you to reach out in a secure and safe environment to a community of people who care about you.
                 </p>
                     <div className="reveal-from-bottom email-input" data-reveal-delay="600">
-                    <SimpleForm className="form-input" />
+                    <Mailchimp
+        action='https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d'
+        fields={[
+          {
+            name: 'EMAIL',
+            placeholder: 'Join Our Mailing List Today',
+            type: 'email',
+            required: true
+          }
+        ]}
+        />
                     </div>
                   </div>
                 </div>
