@@ -162,7 +162,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Choose Who Sees requests
+                    Choose Who Sees Requests
                     </h4>
                   <p className="m-0 text-sm">
                     By curating your community, you are in charge of who gets which requests. Sort your contacts into groups depending on which need they fulfill.
