@@ -84,7 +84,7 @@ const Hero = ({
         fields={[
           {
             name: 'EMAIL',
-            placeholder: 'Join Our Mailing List Today',
+            placeholder: 'Lets Stay Connected',
             type: 'email',
             required: true
           }
