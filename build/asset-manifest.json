@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.44cb1da7.chunk.css",
-    "main.js": "/static/js/main.1fa01f90.chunk.js",
-    "main.js.map": "/static/js/main.1fa01f90.chunk.js.map",
+    "main.js": "/static/js/main.5a989ba9.chunk.js",
+    "main.js.map": "/static/js/main.5a989ba9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b8b9f84b.js",
     "runtime-main.js.map": "/static/js/runtime-main.b8b9f84b.js.map",
     "static/js/2.63c117c8.chunk.js": "/static/js/2.63c117c8.chunk.js",
     "static/js/2.63c117c8.chunk.js.map": "/static/js/2.63c117c8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.98e261a2088997c38528454ed7bfa51b.js": "/precache-manifest.98e261a2088997c38528454ed7bfa51b.js",
+    "precache-manifest.904f4cef85e341064fb66b0097a0515f.js": "/precache-manifest.904f4cef85e341064fb66b0097a0515f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.44cb1da7.chunk.css.map": "/static/css/main.44cb1da7.chunk.css.map",
     "static/js/2.63c117c8.chunk.js.LICENSE.txt": "/static/js/2.63c117c8.chunk.js.LICENSE.txt",
@@ -18,12 +18,13 @@
     "static/media/style.scss": "/static/media/illustration-section-02.63d0555d.svg",
     "static/media/Request-bubble.svg": "/static/media/Request-bubble.6610e87f.svg",
     "static/media/Village-iPhoneMock.png": "/static/media/Village-iPhoneMock.364ee163.png",
-    "static/media/family-hero-cropped.png": "/static/media/family-hero-cropped.fa103ad8.png"
+    "static/media/family-hero-cropped.png": "/static/media/family-hero-cropped.fa103ad8.png",
+    "static/media/youtube-vid-image.png": "/static/media/youtube-vid-image.dd3d0c09.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b8b9f84b.js",
     "static/js/2.63c117c8.chunk.js",
     "static/css/main.44cb1da7.chunk.css",
-    "static/js/main.1fa01f90.chunk.js"
+    "static/js/main.5a989ba9.chunk.js"
   ]
 }

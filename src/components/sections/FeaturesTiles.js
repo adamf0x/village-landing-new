@@ -70,8 +70,8 @@ const FeaturesTiles = ({
         <div className={innerClasses}>
           <div className={tilesClasses}>
             <div class="section-header">
-            {/*<a
-                  data-video="https://player.vimeo.com/video/174002812"
+            <a
+                  data-video="https://youtu.be/ljQFwTT6J_I"
                   href="#0"
                   aria-controls="video-modal"
                   onClick={openModal}
@@ -92,15 +92,15 @@ const FeaturesTiles = ({
               id="video-modal"
               show={videoModalActive}
               handleClose={closeModal}
-              video="https://player.vimeo.com/video/174002812"
-            videoTag="iframe" /> */}
+              video="https://youtu.be/ljQFwTT6J_I"
+            videoTag="iframe" /> 
               <div class="header-text">
                 <h2 class="mt-0 text-color-secondary mb-16">
                   We Get By With a Little Help From Our Friends
               </h2>
                 <p class="m-0">
                   The core of Village’s mission is to build real world engagement with our local communities so we can all get a little more support when we need it. 
-                  {/* //REMOVED - NO VIDEO YET// No one knows the power of this like our Founder Ashley. Listen to her story to understand the inspiration for Village and how one little surprise can change everything. */}
+                  No one knows the power of this like our Founder Ashley. Listen to her story to understand the inspiration for Village and how one little surprise can change everything. 
                 </p>
               </div>
               
