@@ -71,7 +71,7 @@ const FeaturesTiles = ({
           <div className={tilesClasses}>
             <div class="section-header">
             <a
-                  data-video="https://youtu.be/ljQFwTT6J_I"
+                  data-video="https://www.youtube.com/embed/ljQFwTT6J_I"
                   href="#0"
                   aria-controls="video-modal"
                   onClick={openModal}
@@ -92,7 +92,7 @@ const FeaturesTiles = ({
               id="video-modal"
               show={videoModalActive}
               handleClose={closeModal}
-              video="https://youtu.be/ljQFwTT6J_I"
+              video="https://www.youtube.com/embed/ljQFwTT6J_I"
             videoTag="iframe" /> 
               <div class="header-text">
                 <h2 class="mt-0 text-color-secondary mb-16">
