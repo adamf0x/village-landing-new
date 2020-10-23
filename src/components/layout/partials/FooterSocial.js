@@ -44,7 +44,7 @@ const FooterSocial = ({
           </a>
         </li> */}
         <li>
-          <a href="https://www.instagram.com/thevillageapp.co">
+          <a href="https://www.instagram.com/thevillageapp.co/">
             <svg
               width="22"
               height="22"
