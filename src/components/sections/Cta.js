@@ -64,7 +64,7 @@ const Cta = ({
               fields={[
                 {
                   name: 'EMAIL',
-                  placeholder: 'Lets Stay Connected',
+                  placeholder: "Let's Stay Connected",
                   type: 'email',
                   required: true
                 }
