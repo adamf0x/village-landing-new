@@ -1,0 +1,21 @@
+@import "_navbar";
+@import "_hero";
+@import "_section";
+@import "_sectionTwo";
+@import "_fonts";
+@import "_explanation";
+@import "~bootstrap/scss/bootstrap";
+
+.app-container{
+    display: grid;
+    row-gap: 2%;
+}
+
+@media screen and (min-width: 1280px){
+    .app-container{
+        row-gap: 20%;
+    }
+    .divider{
+        display: none;
+    }
+}

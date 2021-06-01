@@ -1,0 +1,160 @@
+.sectionTwo-container-outer {
+  background-color: #29B1AD;
+  @include angle(before, 3deg);
+  @include angle(after, 3deg, flip);
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.sectionTwo-text-container {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 2;
+  order: 2;
+  width: 80%;
+  h1 {
+    font-family: 'Comfortaa' !important;
+    font-weight: 700 !important;
+    color: white !important;
+  }
+  h2 {
+    color: white !important;
+    font-family: "Roboto" !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+  }
+}
+
+.sectionTwo-image-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex: 1;
+  order: 1;
+}
+
+.sectionTwo-image-background {
+  position: absolute;
+  border-radius: 50%;
+  height: 19em;
+  width: 19em;
+  box-shadow: 5px 15px 24px -15px #000000;
+  background-color: #153e69;
+  transform: translateY(-290px);
+}
+
+.sectionTwo-image {
+  position: absolute;
+  height: 18em;
+  width: 18em;
+  border-radius: 50%;
+  transform: translateY(-282px);
+}
+
+.sectionTwo-shape-1 {
+    position: absolute;
+    z-index: -1;
+    width: 45px;
+    height: 45px;
+    transform: translateY(5px) translateX(50px) rotate(-10deg);
+}
+
+.sectionTwo-shape-2 {
+    position: absolute;
+    z-index: -2;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ef7432;
+    transform: translateY(-60px) translateX(120px);
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTwo-text-container {
+    h1 {
+      font-family: "Comfortaa", cursive !important;
+      font-size: 50px !important;
+      color: white;
+    }
+    h2 {
+      color: white !important;
+      font-family: "Roboto" !important;
+      font-size: 20px !important;
+      font-weight: 400 !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sectionTwo-container-outer {
+    background-color: #29B1AD;
+    height: 600px;
+    @include angle(before, 3deg);
+    @include angle(after, 3deg, flip);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .sectionTwo-text-container {
+    position: static;
+    margin-right: 10%;
+    h1 {
+      font-family: "Comfortaa", cursive !important;
+      font-size: 60px !important;
+      color: white;
+    }
+    h2 {
+      color: white !important;
+      font-family: "Roboto" !important;
+      font-size: 25px !important;
+      font-weight: 400 !important;
+    }
+  }
+  .sectionTwo-image-container {
+    position: static;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex: 1;
+    order: 1;
+  }
+  .sectionTwo-image-background {
+    position: static;
+    border-radius: 50%;
+    height: 55em;
+    width: 55em;
+    box-shadow: 5px 15px 24px -15px #000000;
+    background-color: #153e69;
+    transform: translateX(-120px);
+  }
+  .sectionTwo-image {
+    position: absolute;
+    height: 54em;
+    width: 54em;
+    border-radius: 50%;
+    transform: translateY(8px) translateX(-120px);
+  }
+
+  .sectionTwo-shape-1 {
+    position: absolute;
+    z-index: -1;
+    width: 160px;
+    height: 160px;
+    transform: translateY(930px) rotate(-10deg);
+  }
+
+  .sectionTwo-shape-2 {
+    position: absolute;
+    z-index: -3;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ef7432;
+    transform: translateY(650px) translateX(200px);
+  }
+}
