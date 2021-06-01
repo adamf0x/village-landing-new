@@ -1,10 +1,30 @@
 .hero {
-
+	display: flex;
 	.section-inner {
 		padding-top: $hero--padding-t__mobile;
 		padding-bottom: $hero--padding-b__mobile;
 	}
 }
+
+// .circle-container{
+// 	margin-top: 100px;
+// 	margin-left: 30px;
+// 	width: 15%;
+// 	height: 200px;
+// 	background-color: white;
+// }
+
+.imageContainer-circular-shadow-large{
+	position: absolute;
+	margin-top: 50px;
+	margin-left: -50px;
+	box-shadow: 5px 15px 24px -15px #929292;
+	background-color: #EF7432;
+	border-radius: 50%;
+	width: 575px;
+	padding-bottom: 575px;
+}
+
 
 .hero-inner {
 
