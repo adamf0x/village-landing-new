@@ -3,14 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 5%;
-  margin-left: 5%;
 }
 
 .faq-text-container {
   display: flex;
   flex-direction: column;
   .header-container {
+    margin-left: 5%;
     margin-bottom: 2%;
   }
   h1 {
@@ -27,6 +26,7 @@
     font-family: "Roboto" !important;
     font-size: 12px !important;
     color: #555b5c !important;
+    width: 200px;
   }
 
   h3 {
@@ -39,6 +39,10 @@
 }
 
 .faq-accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: white !important;
   div {
     display: flex;
@@ -47,7 +51,6 @@
     max-width: 90%;
     width: 100%;
     border: none !important;
-    margin-left: 0 !important;
   }
   .toggle-border-bottom {
     border-bottom: 1px solid #909090 !important;
@@ -57,6 +60,9 @@
   }
   .collapse {
     border-bottom: 1px solid #909090 !important;
+  }
+  .card{
+    width: 90%;
   }
 }
 
@@ -69,9 +75,7 @@
   .FAQ-container-outer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-right: 20%;
-    margin-left: 20%;
+    justify-content: center;
     margin-top: -10%;
     margin-bottom: -10%;
   }
@@ -128,7 +132,7 @@
   .shapes-right {
     display: flex;
     order: 3;
-    transform: translateY(-300px);
+    transform: translateY(-300px) translateX(-20px);
     margin-left: 5%;
     .shape2 {
       position: absolute;
@@ -142,7 +146,7 @@
       position: absolute;
       width: 240px;
       height: 240px;
-      transform: rotate(10deg) translateY(150px) translateX(50px);
+      transform: rotate(10deg) translateY(150px);
     }
   }
 }

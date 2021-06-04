@@ -10,6 +10,7 @@ import menInGarden from "./images/men-in-garden.png";
 import Explanation from "./Explanation";
 import olderWoman from "./images/older-woman.png";
 import groupOfPeople from "./images/group-of-people.png";
+import family from "./images/family.png";
 import Footer from "./Footer";
 
 function App() {
@@ -42,7 +43,7 @@ function App() {
             text={`You’re busy and asking for help can sometimes be a lot of work but your 
             people want to help and The Village App makes it easier than ever to ask. No more long explanations, 
             group messages or awkward texts. Life is better when we come together.`}
-            imageSource={groupOfPeople}
+            imageSource={family}
           />
         </div>
         <div className="item-d" id="no-trolls">
@@ -87,10 +88,10 @@ function App() {
             type="signup"
           />
         </div>
-        <div className="item-h">
+        <div className="item-h" id="faq">
           <Faq />
         </div>
-        <div className="item-i">
+        <div className="item-i" id="team">
           <Team />
         </div>
         <div className="item-j">

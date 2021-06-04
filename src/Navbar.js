@@ -25,12 +25,12 @@ const Navigation = (props) => {
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
           <Nav>
             <Nav.Link onClick={()=>{animateScroll.scrollToTop()}}><FontAwesomeIcon icon={faHome} size={"2x"}/></Nav.Link>
-            <Nav.Link><Link href="#your-community" to="your-community" smooth>Your Community</Link></Nav.Link>
-            <Nav.Link><Link href="#your-people" to="your-people" smooth>Your People</Link></Nav.Link>
-            <Nav.Link><Link href="#no-trolls" to="no-trolls" smooth>No Trolls</Link></Nav.Link>
-            <Nav.Link><Link href="#our-story" to="our-story" smooth>Our Story</Link></Nav.Link>
-            <Nav.Link><Link href="the-app" to="the-app" smooth>The App</Link></Nav.Link>
-            <Nav.Link><Link href="try-it" to="try-it" smooth>Try It!</Link></Nav.Link>
+            <Nav.Link><Link href="#your-community" to="your-community" offset={-300} smooth>Your Community</Link></Nav.Link>
+            <Nav.Link><Link href="#your-people" to="your-people" offset={-500} smooth>Your People</Link></Nav.Link>
+            <Nav.Link><Link href="#no-trolls" to="no-trolls" offset={-300} smooth>No Trolls</Link></Nav.Link>
+            <Nav.Link><Link href="#our-story" to="our-story" offset={-300} smooth>Our Story</Link></Nav.Link>
+            <Nav.Link><Link href="the-app" to="the-app" offset={-400} smooth>The App</Link></Nav.Link>
+            <Nav.Link><Link href="try-it" to="try-it" offset={-500} smooth>Try It!</Link></Nav.Link>
             <div className="icons">
               <Nav.Link><FontAwesomeIcon icon={faFacebookF}/></Nav.Link>
               <Nav.Link><FontAwesomeIcon icon={faInstagram}/></Nav.Link>

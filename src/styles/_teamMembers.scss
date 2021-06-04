@@ -27,39 +27,91 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  img{
+    margin-bottom: 10%;
+  }
+  h1{
+    font-family: "Comfortaa" !important;
+    font-weight: 700 !important;
+    font-size: 10px !important;
+    color: #113E69 !important;
+    text-align: center;
+  }
+  h2{
+    font-family: "Roboto" !important;
+    font-weight: 300 !important;
+    font-size: 10px !important;
+    text-align: center;
+  }
 }
 
-.members-large-1 {
-  width: 150px;
-  height: 200px;
-  background-color: red;
-}
-.members-large-2 {
-  width: 150px;
-  height: 200px;
-  background-color: red;
-}
-
-.members-small-1 {
-  width: 100px;
+.member-large{
+  width: 130px;
   height: 130px;
-  background-color: red;
 }
 
-.members-small-2 {
-  width: 100px;
-  height: 130px;
-  background-color: red;
+.member-small{
+  width: 90px;
+  height: 90px;
 }
 
-.members-small-3 {
-  width: 100px;
-  height: 130px;
-  background-color: red;
+[class^="members-large"]{
+  margin: 5%;
+}
+
+[class^="members-small"]{
+  margin: 5%;
 }
 
 @media screen and (min-width: 1315px) {
   .team-members-container-outer {
     margin-bottom: -10%;
+  }
+
+  .member-large{
+    width: 300px;
+    height: 300px;
+  }
+  
+  .member-small{
+    width: 275px;
+    height: 275px;
+  }
+  
+  [class^="members-large"]{
+    margin: 50px;
+  }
+  
+  [class^="members-small"]{
+    margin: 50px;
+  }
+  .team-members-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .upper,
+  .lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      margin-bottom: 10%;
+    }
+    h1{
+      font-family: "Comfortaa" !important;
+      font-weight: 700 !important;
+      font-size: 32px !important;
+      color: #113E69 !important;
+      text-align: center;
+    }
+    h2{
+      font-family: "Roboto" !important;
+      font-weight: 300 !important;
+      font-size: 28px !important;
+      text-align: center;
+    }
   }
 }

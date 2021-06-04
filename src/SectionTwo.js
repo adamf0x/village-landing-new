@@ -3,6 +3,7 @@ import image from "./images/4-cropped.png";
 import hex2 from "./images/hex2.png";
 import { Button, InputGroup, FormControl } from "react-bootstrap";
 import Section from "./Section";
+import Mailchimp from "react-mailchimp-form"
 
 const SectionTwo = (props) => {
   return props.slant !== "opposite" ? (
@@ -25,7 +26,7 @@ const SectionTwo = (props) => {
         <h2>{props.text}</h2>
         {props.type == "signup" && (
           <div class="signup-container">
-            <Signup/>
+            <Signup />
           </div>
         )}
       </div>
@@ -39,35 +40,34 @@ const SectionTwo = (props) => {
 
 export const Signup = (props) => {
   return (
-    <InputGroup>
-      <FormControl
-        className="input-area"
-        placeholder="Sign up to our newsletter"
-        aria-label="Sign up"
-        aria-describedby="basic-addon1"
-      />
-      <InputGroup.Append>
-        {props.buttonColour === "light"?
-        <Button
-          className="signup-button-light"
-          onClick={() => {
-            console.log("hello");
-          }}
-        >
-          Sign up
-        </Button>:
-        <Button
-        className="signup-button"
-        onClick={() => {
-          console.log("hello");
-        }}
-      >
-        Sign up
-      </Button>}
-      </InputGroup.Append>
-    </InputGroup>
+    props.buttonColour !== "light"?
+    <Mailchimp
+        className="mailchimp-form"
+        action="https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d"
+        fields={[
+          {
+            name: "EMAIL",
+            placeholder: "Sign up to our newsletter",
+            type: "email",
+            required: true,
+          },
+        ]}
+      />:
+      <div className="light-button">
+      <Mailchimp
+      className="mailchimp-form-light"
+      action="https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d"
+      fields={[
+        {
+          name: "EMAIL",
+          placeholder: "Sign up to our newsletter",
+          type: "email",
+          required: true,
+        },
+      ]}
+    />
+    </div>
   );
 };
 
-export default SectionTwo
-
+export default SectionTwo;

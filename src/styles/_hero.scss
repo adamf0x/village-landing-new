@@ -1,22 +1,9 @@
 @import "_mixin";
 
-h1 {
-  font-family: "Comfortaa", cursive !important;
-  font-size: 25px !important;
-  font-weight: 700 !important;
-  color: white !important;
-}
-
-h2 {
-  font-family: "Roboto" !important;
-  font-size: 15px !important;
-  font-weight: 400 !important;
-  color: white;
-}
 
 .hero-container-outer {
   background-color: #29B1AD;
-  height: 600px;
+  height: 700px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -31,6 +18,21 @@ h2 {
   justify-content: center;
   flex-direction: column;
   width: 80%;
+  h1 {
+    font-family: "Comfortaa", cursive !important;
+    font-size: 25px !important;
+    font-weight: 700 !important;
+    color: white !important;
+    margin-right: 5%;
+  }
+  
+  h2 {
+    font-family: "Roboto" !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    color: white;
+    margin-right: 20%;
+  }
 }
 
 .hero-container-image {
@@ -41,6 +43,8 @@ h2 {
   justify-content: center;
   align-content: center;
   margin-top: 5%;
+  height: 95%;
+  margin-bottom: 10%;
 }
 .hero-image-background {
   border-radius: 50%;
@@ -58,17 +62,53 @@ h2 {
   transform: translateY(8px);
 }
 
+.hero-request{
+  position: absolute;
+  width: 360px;
+  height: 140px;
+  transform: translateY(260px);
+}
+
+.right-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  order: 2;
+  margin-bottom: 5%;
+}
+
+.buttons{
+  display: flex;
+  order: 3;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.btn{
+  background: none !important;
+  border: none !important;
+}
+
+
 @media screen and (min-width: 500px) {
+  .hero-container-text{
   h1 {
     font-family: "Comfortaa", cursive !important;
-    font-size: 45px !important;
+    font-size: 30px !important;
     color: white;
   }
   h2 {
     font-family: "Roboto" !important;
-    font-size: 25px !important;
+    font-size: 20px !important;
     font-weight: 400 !important;
     color: white;
+  }
+}
+  .buttons{
+    display: flex;
+    order: 3;
+    justify-content: space-evenly;
   }
 }
 
@@ -89,16 +129,14 @@ h2 {
 }
 
 @media screen and (min-width: 1315px) {
-  h1 {
-    font-family: "Comfortaa", cursive !important;
-    font-size: 80px !important;
-    color: white !important;
-  }
-  h2 {
-    font-family: "Roboto" !important;
-    font-size: 25px !important;
-    font-weight: 400 !important;
-    color: white;
+  .hero-container-text{
+    width: 100%;
+    h1{
+      font-size: 80px !important;
+    }
+    h2{
+      font-size: 25px !important;
+    }
   }
 
   .hero-container-image {
@@ -107,23 +145,31 @@ h2 {
     order: 1;
     align-self: center;
     justify-content: center;
+    margin-top: 0;
   }
 
   .hero-image {
     position: absolute;
     border-radius: 50%;
-    height: 49em;
-    width: 49em;
-    transform: translateY(108px) translateX(-50px);
+    height: 48em;
+    width: 48em;
+    transform: translateY(128px) translateX(-40px);
   }
 
   .hero-image-background {
     border-radius: 50%;
-    height: 50em;
-    width: 50em;
+    height: 49em;
+    width: 49em;
     box-shadow: 5px 15px 24px -15px #929292;
     background-color: #ef7432;
-    transform: translateY(100px) translateX(-50px);
+    transform: translateY(120px) translateX(-40px);
+  }
+
+  .hero-request{
+    position: absolute;
+    width: 810px;
+    height: 280px;
+    transform: translateY(670px) translateX(400px);
   }
 
   .hero-container-outer {
@@ -134,4 +180,23 @@ h2 {
     justify-content: space-around;
     flex-direction: row;
   }
+  
+  .buttons{
+    display: flex;
+    order: 3;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .right-content{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    margin-bottom: 0;
+    align-items: flex-start;
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
 }
+
+
