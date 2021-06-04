@@ -1,0 +1,51 @@
+.footer-container-outer{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    background-image: linear-gradient(#113E69, #092A4A);
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+}
+
+.footer-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    h1{
+        font-size: 25px !important;
+    }
+    h2{
+        font-size: 14px !important;
+        margin-top: 2%;
+        margin-bottom: 8%;
+    }
+}
+
+.footer-signup-container{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+}
+
+@media screen and (min-width: 1315px){
+    .footer-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 30%;
+        h1{
+            font-size: 42px !important;
+        }
+        h2{
+            font-size: 18px !important;
+            margin-top: 2%;
+            margin-bottom: 8%;
+        }
+    }
+}

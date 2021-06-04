@@ -4,6 +4,9 @@
 @import "_sectionTwo";
 @import "_fonts";
 @import "_explanation";
+@import "_faq";
+@import "_teamMembers";
+@import "_footer";
 @import "~bootstrap/scss/bootstrap";
 
 .app-container{
@@ -11,9 +14,9 @@
     row-gap: 2%;
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1315px){
     .app-container{
-        row-gap: 20%;
+        row-gap: 10%;
     }
     .divider{
         display: none;

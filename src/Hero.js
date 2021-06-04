@@ -1,6 +1,6 @@
 import React from "react";
 import image from "./images/4-cropped.png";
-import motherInKitchen from "./images/mother-in-kitchen.png";
+import womenOnCouch from "./images/women-on-couch-hero.png";
 
 const Hero = (props) => {
   return (
@@ -17,7 +17,7 @@ const Hero = (props) => {
       </div>
       <div className="hero-container-image">
         <div className="hero-image-background"/>
-        <img className="hero-image" src={motherInKitchen} width={200} height={200}></img>
+        <img className="hero-image" src={womenOnCouch} width={200} height={200}></img>
       </div>
     </div>
   );
