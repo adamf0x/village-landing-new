@@ -33,8 +33,8 @@ function App() {
             shapesConfig={1}
           />
         </div>
-        <div className="divider"></div>
-        <div className="divider"></div>
+        {/* <div className="divider"></div>
+        <div className="divider"></div> */}
         <div className="divider"></div>
         <div className="divider"></div>
         <div className="item-c" id="your-people">

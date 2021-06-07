@@ -114,6 +114,7 @@
     font-size: 15px;
     font-family: "Roboto";
     color: white;
+    margin-bottom: 0 !important;
   }
 }
 .inner-buttons{
@@ -165,7 +166,7 @@
 @media screen and (min-width: 1315px) {
   .hero-container-text {
     width: 100%;
-    margin-bottom: -5%;
+    margin-top: 2%;
     h1 {
       font-size: 80px !important;
     }

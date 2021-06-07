@@ -59,6 +59,9 @@ a{
 }
 
 @media screen and (min-width: 1315px){
+    .invisible{
+        display: none !important;
+    }
     .icons{
         display: flex;
         flex-direction: row;

@@ -18,7 +18,7 @@ const Navigation = (props) => {
   return (
     <div className="navbar-container">
       <Navbar expand="lg" bg="light" fixed="top">
-        <Navbar.Brand></Navbar.Brand>
+        <Navbar.Brand className="invisible"></Navbar.Brand>
         <Navbar.Brand onClick={()=>{animateScroll.scrollToTop()}}>
           <img src={image} width={200}></img>
         </Navbar.Brand>
