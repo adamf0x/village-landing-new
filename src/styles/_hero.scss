@@ -116,6 +116,10 @@
     color: white;
   }
 }
+.inner-buttons{
+  display: flex;
+  flex-direction: row;
+}
 .btn {
   background: none !important;
   border: none !important;

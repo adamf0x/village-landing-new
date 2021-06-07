@@ -19,7 +19,7 @@ const Hero = (props) => {
         </div>
         <div className="buttons">
           <h3>Coming Soon</h3>
-          <div>
+          <div className="inner-buttons">
             <Button disabled>
               <img src={appStoreButon} width={150}></img>
             </Button>
