@@ -32,9 +32,9 @@ const Navigation = (props) => {
             <Nav.Link><Link href="the-app" to="the-app" offset={-400} smooth>The App</Link></Nav.Link>
             <Nav.Link><Link href="try-it" to="try-it" offset={-500} smooth>Try It!</Link></Nav.Link>
             <div className="icons">
-              <Nav.Link><FontAwesomeIcon icon={faFacebookF}/></Nav.Link>
-              <Nav.Link><FontAwesomeIcon icon={faInstagram}/></Nav.Link>
-              <Nav.Link><FontAwesomeIcon icon={faTwitter}/></Nav.Link>
+              <Nav.Link href="https://www.fb.com/thevillageapp.co"><FontAwesomeIcon icon={faFacebookF}/></Nav.Link>
+              <Nav.Link href="https://www.Instagram.com/thevillageapp.co"><FontAwesomeIcon icon={faInstagram}/></Nav.Link>
+              <Nav.Link href="https://www.Twitter.com/thevillageappco"><FontAwesomeIcon icon={faTwitter}/></Nav.Link>
             </div>
           </Nav>
         </Navbar.Collapse>

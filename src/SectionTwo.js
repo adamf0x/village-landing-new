@@ -7,7 +7,7 @@ import Mailchimp from "react-mailchimp-form"
 
 const SectionTwo = (props) => {
   return props.slant !== "opposite" ? (
-    <div className="sectionTwo-container-outer-opposite" id="your-people">
+    <div className="sectionTwo-container-outer" id="your-people">
       <div className="sectionTwo-text-container">
         <h1>{props.header}</h1>
         <h2>{props.text}</h2>
@@ -20,7 +20,7 @@ const SectionTwo = (props) => {
       </div>
     </div>
   ) : (
-    <div className="sectionTwo-container-outer">
+    <div className="sectionTwo-container-outer-opposite">
       <div className="sectionTwo-text-container">
         <h1>{props.header}</h1>
         <h2>{props.text}</h2>

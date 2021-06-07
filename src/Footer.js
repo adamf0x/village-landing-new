@@ -13,6 +13,7 @@ import {
   faFacebookF,
 } from "@fortawesome/free-brands-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import {Nav} from "react-bootstrap"
 
 const Footer = (props) => {
   return (
@@ -45,9 +46,9 @@ const Footer = (props) => {
           </Link>
         </div>
         <div className="footer-socials">
-          <button><FontAwesomeIcon icon={faFacebookF} /></button>
-          <button><FontAwesomeIcon icon={faInstagram} /></button>
-          <button><FontAwesomeIcon icon={faTwitter} /></button>
+              <a href="https://www.fb.com/thevillageapp.co"><FontAwesomeIcon icon={faFacebookF}/></a>
+              <a href="https://www.Instagram.com/thevillageapp.co"><FontAwesomeIcon icon={faInstagram}/></a>
+              <a href="https://www.Twitter.com/thevillageappco"><FontAwesomeIcon icon={faTwitter}/></a>
         </div>
       </div>
     </div>

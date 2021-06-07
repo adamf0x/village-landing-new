@@ -10,23 +10,26 @@ const Hero = (props) => {
   return (
     <div className="hero-container-outer">
       <div className="right-content">
-        <div className="hero-container-text">
+        <div className="hero-container-text pop-in-delay-2">
           <h1>The App For Building Better Communities</h1>
           <h2>
             Welcome to Village, The App to get you off your phone and into the
             real life.
           </h2>
         </div>
-        <div className="buttons">
-          <Button>
-            <img src={appStoreButon} width={150}></img>
-          </Button>
-          <Button>
-            <img src={googlePlayButton} width={150}></img>
-          </Button>
+        <div className="buttons pop-in-delay-2">
+          <h3>Coming Soon</h3>
+          <div>
+            <Button disabled>
+              <img src={appStoreButon} width={150}></img>
+            </Button>
+            <Button disabled> 
+              <img src={googlePlayButton} width={150}></img>
+            </Button>
+          </div>
         </div>
       </div>
-      <div className="hero-container-image">
+      <div className="hero-container-image pop-in">
         <div className="hero-image-background" />
         <img
           className="hero-image"
@@ -34,7 +37,7 @@ const Hero = (props) => {
           width={200}
           height={200}
         ></img>
-        <img className="hero-request" src={requestSample}></img>
+        <img className="hero-request pop-in-delay" src={requestSample}></img>
       </div>
     </div>
   );
