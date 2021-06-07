@@ -1,8 +1,7 @@
 @import "_mixin";
 
-
 .hero-container-outer {
-  background-color: #29B1AD;
+  background-color: #29b1ad;
   height: 700px;
   display: flex;
   justify-content: space-around;
@@ -20,6 +19,11 @@
   flex-direction: column;
   width: 80%;
   margin-top: -10;
+  -webkit-animation: fadein 2s 1s ease-in forwards;
+  -moz-animation: fadein 2s 1s ease-in forwards;
+  -ms-animation: fadein 2s 1s ease-in forwards;
+  -o-animation: fadein 2s 1s ease-in forwards;
+  animation: fadein 2s 1s ease-in forwards;
   h1 {
     font-family: "Comfortaa", cursive !important;
     font-size: 25px !important;
@@ -27,7 +31,7 @@
     color: white !important;
     margin-right: 5%;
   }
-  
+
   h2 {
     font-family: "Roboto" !important;
     font-size: 15px !important;
@@ -38,6 +42,7 @@
 }
 
 .hero-container-image {
+  opacity: 0;
   display: flex;
   flex: 1;
   order: 1;
@@ -47,6 +52,11 @@
   margin-top: 5%;
   height: 95%;
   margin-bottom: 10%;
+  -webkit-animation: fadein 2s ease-in forwards;
+  -moz-animation: fadein 2s ease-in forwards;
+  -ms-animation: fadein 2s ease-in forwards;
+  -o-animation: fadein 2s ease-in forwards;
+  animation: fadein 2s ease-in forwards;
 }
 .hero-image-background {
   border-radius: 50%;
@@ -64,15 +74,20 @@
   transform: translateY(8px);
 }
 
-.hero-request{
+.hero-request {
   opacity: 0;
   position: absolute;
   width: 360px;
   height: 140px;
   transform: translateY(260px);
+  -webkit-animation: fadein 2s 0.5s ease-in forwards;
+  -moz-animation: fadein 2s 0.5s ease-in forwards;
+  -ms-animation: fadein 2s 0.5s ease-in forwards;
+  -o-animation: fadein 2s 0.5s ease-in forwards;
+  animation: fadein 2s 0.5s ease-in forwards;
 }
 
-.right-content{
+.right-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +96,7 @@
   margin-bottom: 5%;
 }
 
-.buttons{
+.buttons {
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -90,47 +105,37 @@
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
-  h3{
+  -webkit-animation: fadein 2s 1.5s ease-in forwards;
+  -moz-animation: fadein 2s 1.5s ease-in forwards;
+  -ms-animation: fadein 2s 1.5s ease-in forwards;
+  -o-animation: fadein 2s 1.5s ease-in forwards;
+  animation: fadein 2s 1.5s ease-in forwards;
+  h3 {
     font-size: 15px;
     font-family: "Roboto";
     color: white;
   }
 }
-.btn{
+.btn {
   background: none !important;
   border: none !important;
 }
 
-.pop-in{
-  animation: fade-in 2s 1 forwards ease-in;
-}
-
-.pop-in-delay{
-  animation: fade-in 2s 1s 1 forwards ease-in;
-
-}
-
-.pop-in-delay-2 {
-  animation: fade-in 2s 2s 1 forwards ease-in;
-
-}
-
-
 @media screen and (min-width: 500px) {
-  .hero-container-text{
-  h1 {
-    font-family: "Comfortaa", cursive !important;
-    font-size: 30px !important;
-    color: white;
+  .hero-container-text {
+    h1 {
+      font-family: "Comfortaa", cursive !important;
+      font-size: 30px !important;
+      color: white;
+    }
+    h2 {
+      font-family: "Roboto" !important;
+      font-size: 20px !important;
+      font-weight: 400 !important;
+      color: white;
+    }
   }
-  h2 {
-    font-family: "Roboto" !important;
-    font-size: 20px !important;
-    font-weight: 400 !important;
-    color: white;
-  }
-}
-  .buttons{
+  .buttons {
     display: flex;
     order: 3;
     justify-content: space-evenly;
@@ -154,13 +159,13 @@
 }
 
 @media screen and (min-width: 1315px) {
-  .hero-container-text{
+  .hero-container-text {
     width: 100%;
     margin-bottom: -5%;
-    h1{
+    h1 {
       font-size: 80px !important;
     }
-    h2{
+    h2 {
       font-size: 25px !important;
     }
   }
@@ -191,7 +196,7 @@
     transform: translateY(120px) translateX(-40px);
   }
 
-  .hero-request{
+  .hero-request {
     position: absolute;
     width: 810px;
     height: 280px;
@@ -206,15 +211,15 @@
     justify-content: space-around;
     flex-direction: row;
   }
-  
-  .buttons{
+
+  .buttons {
     display: flex;
     order: 3;
     justify-content: space-evenly;
     margin-left: 0;
     margin-right: 0;
   }
-  .right-content{
+  .right-content {
     display: flex;
     flex-direction: column;
     order: 2;
@@ -225,13 +230,38 @@
   }
 }
 
-@keyframes fade-in {
-  from{
+@keyframes fadein {
+  from {
     opacity: 0;
   }
-  to{
-    opacity: 100%;
+  to {
+    opacity: 1;
   }
 }
 
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

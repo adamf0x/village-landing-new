@@ -35,7 +35,7 @@ const Faq = (props) => {
                 Why should I use Village over any other currently available app
                 or tool?
               </h2>
-              {expand === "expand1" ? <h3>&#8722;</h3> : <h3>&#43;</h3>}
+              {expand === "expand1" ? <h3>-</h3> : <h3>+</h3>}
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
@@ -59,7 +59,7 @@ const Faq = (props) => {
               }}
             >
               <h2>How is Village different from social media?</h2>
-              {expand === "expand2" ? <h3>&#8722;</h3> : <h3>&#43;</h3>}
+              {expand === "expand2" ? <h3>-</h3> : <h3>+</h3>}
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
@@ -85,7 +85,7 @@ const Faq = (props) => {
               }}
             >
               <h2>Is Village safe?</h2>
-              {expand === "expand3" ? <h3>&#8722;</h3> : <h3>&#43;</h3>}
+              {expand === "expand3" ? <h3>-</h3> : <h3>+</h3>}
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body>
@@ -112,7 +112,7 @@ const Faq = (props) => {
               }}
             >
               <h2>Is Village for me?</h2>
-              {expand === "expand4" ? <h3>&#8722;</h3> : <h3>&#43;</h3>}
+              {expand === "expand4" ? <h3>-</h3> : <h3>+</h3>}
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="3">
               <Card.Body>
@@ -137,7 +137,7 @@ const Faq = (props) => {
             >
               <h2>How can I use Village during Covid?</h2>
 
-              {expand === "expand5" ? <h3>&#8722;</h3> : <h3>&#43;</h3>}
+              {expand === "expand5" ? <h3>-</h3> : <h3>+</h3>}
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="4">
               <Card.Body>
@@ -171,7 +171,7 @@ const Faq = (props) => {
               }}
             >
               <h2>Is Village free?</h2>
-              {expand === "expand6" ? <h3>&#8722;</h3> : <h3>&#43;</h3>}
+              {expand === "expand6" ? <h3>-</h3> : <h3>+</h3>}
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="5">
               <Card.Body>
@@ -196,7 +196,7 @@ const Faq = (props) => {
                 I’m not one to ask for help, how is this going to make it
                 easier?
               </h2>
-              {expand === "expand7" ? <h3>&#8722;</h3> : <h3>&#43;</h3>}
+              {expand === "expand7" ? <h3>-</h3> : <h3>+</h3>}
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="6">
               <Card.Body>
@@ -223,7 +223,7 @@ const Faq = (props) => {
               <h2>
                 What is an MVP and how is it different from your full version?
               </h2>
-              {expand === "expand8" ? <h3>&#8722;</h3> : <h3>&#43;</h3>}
+              {expand === "expand8" ? <h3>-</h3> : <h3>+</h3>}
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="7">
               <Card.Body>
@@ -248,7 +248,7 @@ const Faq = (props) => {
               }}
             >
               <h2>What is “needs-based” messaging?</h2>
-              {expand === "expand9" ? <h3>&#8722;</h3> : <h3>&#43;</h3>}
+              {expand === "expand9" ? <h3>-</h3> : <h3>+</h3>}
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="8">
               <Card.Body>
@@ -279,7 +279,7 @@ const Faq = (props) => {
                 What is the difference between Friend Finder and Nearby
                 Neighbor?
               </h2>
-              {expand === "expand10" ? <h3>&#8722;</h3> : <h3>&#43;</h3>}
+              {expand === "expand10" ? <h3>-</h3> : <h3>+</h3>}
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="9">
               <Card.Body>
