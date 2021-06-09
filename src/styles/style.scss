@@ -9,6 +9,18 @@
 @import "_footer";
 @import "~bootstrap/scss/bootstrap";
 
+svg{
+    width: 200px;
+    height: 200px;
+  }
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
 .app-container{
     display: grid;
     row-gap: 2%;

@@ -20,6 +20,8 @@
         font-size: 25px !important;
     }
     h2{
+        font-family: 'Roboto' !important;
+        font-weight: 400 !important;
         color: white;
         font-size: 14px !important;
         margin-top: 2%;
@@ -61,6 +63,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.modal-content{
+    transform: translateX(0);
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        color: #153e69 !important;
+        font-family: 'Comfortaa';
+    }
+    h2{
+        color: #555b5c !important;
+        font-family: 'Roboto';
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width: 1315px){

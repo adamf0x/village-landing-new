@@ -13,54 +13,43 @@ const Team = (props) => {
       </div>
       <div className="team-members-content">
         <div className="upper">
-          <div>
-          </div>
+          <div></div>
           <div className="members-large-1">
-            <img className="member-large" src={teamMemberLarge}></img>
-            <h1>
-              Ashley Stone
-            </h1>
-            <h2>
-              CEO/Founder
-            </h2>
+            <a href="https://www.linkedin.com/in/ashley-stone-390380114/">
+              <img className="member-large" src={teamMemberLarge}></img>
+              <h1>Ashley Stone</h1>
+            </a>
+            <h2>CEO/Founder</h2>
           </div>
           <div className="members-large-2">
-            <img className="member-large" src={teamMemberLarge}></img>
-            <h1>
-              Karen Olsson
-            </h1>
-            <h2>
-              COO/CEO of Atomic47
-            </h2>
+            <a href="https://www.linkedin.com/in/karen-o-941a469/">
+              <img className="member-large" src={teamMemberLarge}></img>
+              <h1>Karen Olsson</h1>
+            </a>
+            <h2>COO/CEO of Atomic47</h2>
           </div>
         </div>
         <div className="lower">
           <div className="members-small-1">
-            <img className="member-small" src={teamMemberSmall}></img>
-            <h1>
-              Nicholas Prouten
-            </h1>
-            <h2>
-              Product Manager
-            </h2>
+            <a href="https://www.linkedin.com/in/nick-prouten/">
+              <img className="member-small" src={teamMemberSmall}></img>
+              <h1>Nicholas Prouten</h1>
+            </a>
+            <h2>Product Manager</h2>
           </div>
           <div className="members-small-2">
-            <img className="member-small" src={teamMemberSmall}></img>
-            <h1>
-              Michael Harris
-            </h1>
-            <h2>
-              Business Analyst
-            </h2>
+            <a href="https://www.linkedin.com/in/michaeldonharris/">
+              <img className="member-small" src={teamMemberSmall}></img>
+              <h1>Michael Harris</h1>
+            </a>
+            <h2>Business Analyst</h2>
           </div>
           <div className="members-small-3">
-            <img className="member-small" src={teamMemberSmall}></img>
-            <h1>
-              Donovan Rogall
-            </h1>
-            <h2>
-              Head of Technical Team
-            </h2>
+            <a href="https://www.linkedin.com/in/donovan-rogall-9790208/">
+              <img className="member-small" src={teamMemberSmall}></img>
+              <h1>Donovan Rogall</h1>
+            </a>
+            <h2>Head of Technical Team</h2>
           </div>
         </div>
       </div>

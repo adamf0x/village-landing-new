@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import Navigation from "./Navbar";
 import Hero from "./Hero";
 import Section from "./Section";
-import SectionTwo, {Signup} from "./SectionTwo";
+import SectionTwo, { Signup } from "./SectionTwo";
 import Faq from "./Faq";
 import Team from "./TeamMembers";
 import womenOnCouch from "./images/women-on-couch.png";
@@ -12,9 +12,47 @@ import olderWoman from "./images/older-woman.png";
 import groupOfPeople from "./images/group-of-people.png";
 import family from "./images/family.png";
 import Footer from "./Footer";
+import { React, useEffect, useState } from "react";
+import useWindowDimensions from "./GetWindowDimensions";
 
 function App() {
-  return (
+  const { width, height } = useWindowDimensions();
+  const [loading, isLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      isLoading(false);
+    }, 2000);
+  }, [Hero, Navigation]);
+  return loading ? (
+    <div className="loading">
+      <svg
+        version="1.1"
+        id="L9"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 100 100"
+        enableBackground="new 0 0 0 0"
+        xmlSpace="preserve"
+      >
+        <path
+          fill="#ef7432"
+          d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50"
+        >
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            dur="1s"
+            from="0 50 50"
+            to="360 50 50"
+            repeatCount="indefinite"
+          />
+        </path>
+      </svg>
+    </div>
+  ) : (
     <>
       <Navigation></Navigation>
       <div className="app-container">
@@ -40,8 +78,8 @@ function App() {
         <div className="item-c" id="your-people">
           <SectionTwo
             header={"Just Ask!"}
-            text={`You’re busy and asking for help can sometimes be a lot of work but your 
-            people want to help and The Village App makes it easier than ever to ask. No more long explanations, 
+            text={`You’re busy and asking for help can sometimes be a lot of work but your
+            people want to help and The Village App makes it easier than ever to ask. No more long explanations,
             group messages or awkward texts. Life is better when we come together.`}
             imageSource={family}
           />
@@ -49,8 +87,8 @@ function App() {
         <div className="item-d" id="no-trolls">
           <Section
             header={"Troll Free!"}
-            text={`With all the negativity circulating online, it can be easy to forget 
-            that good people are all around us. Village creates a safe community by helping 
+            text={`With all the negativity circulating online, it can be easy to forget
+            that good people are all around us. Village creates a safe community by helping
             you learn about the great folks in your neighbourhood!`}
             imageSource={groupOfPeople}
             flavourText={

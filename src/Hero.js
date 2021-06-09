@@ -11,9 +11,9 @@ const Hero = (props) => {
     <div className="hero-container-outer">
       <div className="right-content">
         <div className="hero-container-text">
-          <h1>The App For Building Better Communities</h1>
+          <h1>Building Better Communities</h1>
           <h2>
-            Welcome to Village, The App to get you off your phone and into the
+            Welcome to Village, the app to get you off your phone and into the
             real life.
           </h2>
         </div>

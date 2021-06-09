@@ -25,7 +25,7 @@ const SectionTwo = (props) => {
         <h1>{props.header}</h1>
         <h2>{props.text}</h2>
         {props.type == "signup" && (
-          <div class="signup-container">
+          <div className="signup-container">
             <Signup />
           </div>
         )}
