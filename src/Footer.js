@@ -64,7 +64,7 @@ const Footer = (props) => {
                   Contact us
                 </h1>
                 <h2>
-                  info@thevillageapp.co
+                  <a href="mailto:info@thevillageapp.co">info@thevillageapp.co</a>
                 </h2>
               </div>
             </Modal>
