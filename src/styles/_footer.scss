@@ -40,7 +40,7 @@
   width: 130%;
   margin-top: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   button {
     background: none !important;
     border: none !important;
@@ -75,6 +75,7 @@
   h1 {
     color: #153e69 !important;
     font-family: "Comfortaa";
+    margin-bottom: 0 !important;
   }
   h2 {
     a {

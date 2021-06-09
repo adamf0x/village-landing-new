@@ -47,7 +47,7 @@ export const Signup = (props) => {
         fields={[
           {
             name: "EMAIL",
-            placeholder: "Sign up to our newsletter",
+            placeholder: "Sign up for our newsletter",
             type: "email",
             required: true,
           },
@@ -60,7 +60,7 @@ export const Signup = (props) => {
       fields={[
         {
           name: "EMAIL",
-          placeholder: "Sign up to our newsletter",
+          placeholder: "Sign up for our newsletter",
           type: "email",
           required: true,
         },

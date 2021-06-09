@@ -13,8 +13,7 @@ const Hero = (props) => {
         <div className="hero-container-text">
           <h1>Building Better Communities</h1>
           <h2>
-            Welcome to Village, the app to get you off your phone and into the
-            real life.
+            Welcome to The Village App. Easily and efficiently ask for help from your personal support network and connect to a hyperlocal community.
           </h2>
         </div>
         <div className="buttons">

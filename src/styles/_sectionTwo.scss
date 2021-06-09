@@ -2,7 +2,7 @@
   background-color: #29b1ad;
   @include angle(before, 3deg);
   @include angle(after, 3deg, flip);
-  height: 250px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   background-color: #29b1ad;
   @include angle(before, 3deg, flip);
   @include angle(after, 3deg);
-  height: 250px;
+  height: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -30,7 +30,7 @@
   flex: 2;
   order: 2;
   width: 90%;
-  margin-top: 15%;
+  margin-top: 12%;
   h1 {
     font-family: "Comfortaa" !important;
     font-weight: 700 !important;
@@ -114,18 +114,19 @@
     height: 40px;
     border: none !important;
     font-family: "Comfortaa" !important;
-    width: 330px;
+    width: 340px;
   }
   button {
     width: 100px;
     height: 40px;
     border: none !important;
     border-radius: 30px 30px 30px 30px !important;
-    margin-left: -80px;
+    margin-left: -75px;
     z-index: 99 !important;
     background-color: #29b1ad !important;
     color: white;
     font-family: "Roboto" !important;
+    text-align: center;
   }
   .msg-alert {
     position: absolute;
@@ -143,25 +144,26 @@
   display: flex;
   input {
     border-radius: 30px 30px 30px 30px !important;
-    padding-right: 100px;
+    padding-right: 75px;
     height: 40px;
     border: none !important;
     font-family: "Comfortaa" !important;
-    width: 400px;
+    width: 420px;
   }
   button {
     width: 100px;
     height: 40px;
     border: none !important;
     border-radius: 30px 30px 30px 30px !important;
-    margin-left: -80px;
+    margin-left: -70px;
     z-index: 99 !important;
     background-color: #113d69 !important;
     color: white;
     font-family: "Roboto" !important;
+    text-align: center;
   }
   .msg-alert {
-    transform: translateX(-320px) translateY(50px);
+    transform: translateX(-320px) translateY(45px);
     p {
       position: relative;
       font-family: "Roboto" !important;
