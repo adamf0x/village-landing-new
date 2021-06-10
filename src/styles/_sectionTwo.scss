@@ -104,7 +104,7 @@
   justify-content: center;
 }
 
-.mailchimp-form-light {
+.mailchimp-form-light{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +121,7 @@
     height: 40px;
     border: none !important;
     border-radius: 30px 30px 30px 30px !important;
-    margin-left: -75px;
+    margin-left: -70px;
     z-index: 99 !important;
     background-color: #29b1ad !important;
     color: white;
@@ -140,27 +140,33 @@
   }
 }
 
+.mailchimp-light-container{
+  display: flex;
+  // flex-direction: column;
+  // justify-content:stretch;
+}
 .mailchimp-form {
   display: flex;
   input {
     border-radius: 30px 30px 30px 30px !important;
-    padding-right: 75px;
     height: 40px;
     border: none !important;
     font-family: "Comfortaa" !important;
-    width: 420px;
+    width: 320px !important;
+    margin-left: -10px;
   }
   button {
     width: 100px;
     height: 40px;
     border: none !important;
     border-radius: 30px 30px 30px 30px !important;
-    margin-left: -70px;
+    margin-left: -90px;
     z-index: 99 !important;
     background-color: #113d69 !important;
     color: white;
     font-family: "Roboto" !important;
     text-align: center;
+    transform: translateX(20px);
   }
   .msg-alert {
     transform: translateX(-320px) translateY(45px);
@@ -169,6 +175,7 @@
       font-family: "Roboto" !important;
       color: white !important;
       width: 300px;
+      margin-left: 10px;
     }
   }
 }
@@ -283,22 +290,41 @@
   }
 
   .mailchimp-form {
-    width: 400px;
-    button {
-      margin-left: -80px;
+    display: flex;
+    input {
+      border-radius: 30px 30px 30px 30px !important;
+      height: 40px;
+      border: none !important;
+      font-family: "Comfortaa" !important;
+      width: 320px !important;
+      margin-left: -10px;
     }
-
+    button {
+      width: 100px;
+      height: 40px;
+      border: none !important;
+      border-radius: 30px 30px 30px 30px !important;
+      margin-left: -90px;
+      z-index: 99 !important;
+      background-color: #113d69 !important;
+      color: white;
+      font-family: "Roboto" !important;
+      text-align: center;
+      transform: translateX(20px);
+    }
     .msg-alert {
+      transform: translateX(-320px) translateY(45px);
       p {
+        position: relative;
         font-family: "Roboto" !important;
         color: white !important;
         width: 300px;
-        margin-top: 20px;
-        left: 10px;
+        margin-left: 10px;
       }
     }
   }
   .mailchimp-form-light {
+
     width: 400px;
     button {
       margin-left: -80px;

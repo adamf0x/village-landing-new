@@ -3,7 +3,11 @@ import image from "./images/4-cropped.png";
 import hex2 from "./images/hex2.png";
 import { Button, InputGroup, FormControl } from "react-bootstrap";
 import Section from "./Section";
-import Mailchimp from "react-mailchimp-form"
+import Mailchimp from "react-mailchimp-form";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { faSign } from "@fortawesome/free-solid-svg-icons";
+
+const url="https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d"
 
 const SectionTwo = (props) => {
   return props.slant !== "opposite" ? (
@@ -38,10 +42,18 @@ const SectionTwo = (props) => {
   );
 };
 
+const SimpleForm = () => {
+  <MailchimpSubscribe
+    url={
+      "https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d"
+    }
+  ></MailchimpSubscribe>;
+};
+
 export const Signup = (props) => {
-  return (
-    props.buttonColour !== "light"?
-    <Mailchimp
+  return props.buttonColour !== "light" ? (
+    <div className="mailchimp-light-container">
+      {/* <Mailchimp
         className="mailchimp-form"
         action="https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d"
         fields={[
@@ -52,20 +64,34 @@ export const Signup = (props) => {
             required: true,
           },
         ]}
-      />:
-      <div className="light-button">
-      <Mailchimp
-      className="mailchimp-form-light"
-      action="https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d"
-      fields={[
-        {
-          name: "EMAIL",
-          placeholder: "Sign up for our newsletter",
-          type: "email",
-          required: true,
-        },
-      ]}
-    />
+      /> */}
+     <form className="mailchimp-form" action="https://weebly.us17.list-manage.com/subscribe/post" method="POST">
+       <input type="hidden" name="u" value="cc2921b149dcf4cba76383047"/>
+        <input type="hidden" name="id" value="04d8e5472d"/>
+        <input name="MERGE0" id="MERGE0" type="email" required={true} placeholder="Sign up for our newsletter!"></input>
+        <button>Subscribe!</button>
+      </form>
+    </div>
+  ) : (
+    <div className="light-button">
+      {/* <Mailchimp
+        className="mailchimp-form-light"
+        action="https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d"
+        fields={[
+          {
+            name: "EMAIL",
+            placeholder: "Sign up for our newsletter",
+            type: "email",
+            required: true,
+          },
+        ]}
+      /> */}
+       <form className="mailchimp-form-light" action="https://weebly.us17.list-manage.com/subscribe/post" method="POST">
+       <input type="hidden" name="u" value="cc2921b149dcf4cba76383047"/>
+        <input type="hidden" name="id" value="04d8e5472d"/>
+        <input name="MERGE0" id="MERGE0" type="email" required={true} placeholder="Sign up for our newsletter!"></input>
+        <button>Subscribe!</button>
+      </form>
     </div>
   );
 };
