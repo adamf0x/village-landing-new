@@ -53,7 +53,7 @@ const SimpleForm = () => {
 export const Signup = (props) => {
   return props.buttonColour !== "light" ? (
     <div className="mailchimp-light-container">
-      {/* <Mailchimp
+      <Mailchimp
         className="mailchimp-form"
         action="https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d"
         fields={[
@@ -64,17 +64,17 @@ export const Signup = (props) => {
             required: true,
           },
         ]}
-      /> */}
-     <form className="mailchimp-form" action="https://weebly.us17.list-manage.com/subscribe/post" method="POST">
+      />
+     {/* <form className="mailchimp-form" action="https://weebly.us17.list-manage.com/subscribe/post" method="POST">
        <input type="hidden" name="u" value="cc2921b149dcf4cba76383047"/>
         <input type="hidden" name="id" value="04d8e5472d"/>
         <input name="MERGE0" id="MERGE0" type="email" required={true} placeholder="Sign up for our newsletter!"></input>
         <button>Subscribe!</button>
-      </form>
+      </form> */}
     </div>
   ) : (
     <div className="light-button">
-      {/* <Mailchimp
+      <Mailchimp
         className="mailchimp-form-light"
         action="https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d"
         fields={[
@@ -85,13 +85,13 @@ export const Signup = (props) => {
             required: true,
           },
         ]}
-      /> */}
-       <form className="mailchimp-form-light" action="https://weebly.us17.list-manage.com/subscribe/post" method="POST">
+      />
+       {/* <form className="mailchimp-form-light" action="https://weebly.us17.list-manage.com/subscribe/post" method="POST">
        <input type="hidden" name="u" value="cc2921b149dcf4cba76383047"/>
         <input type="hidden" name="id" value="04d8e5472d"/>
         <input name="MERGE0" id="MERGE0" type="email" required={true} placeholder="Sign up for our newsletter!"></input>
         <button>Subscribe!</button>
-      </form>
+      </form> */}
     </div>
   );
 };

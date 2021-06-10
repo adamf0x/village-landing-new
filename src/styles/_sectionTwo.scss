@@ -147,6 +147,9 @@
 }
 .mailchimp-form {
   display: flex;
+  flex-grow: 0 !important;
+  flex-basis: 600px !important;
+  flex-wrap: wrap;
   input {
     border-radius: 30px 30px 30px 30px !important;
     height: 40px;
@@ -156,7 +159,7 @@
     margin-left: -10px;
   }
   button {
-    width: 100px;
+    width: 90px;
     height: 40px;
     border: none !important;
     border-radius: 30px 30px 30px 30px !important;
@@ -169,7 +172,7 @@
     transform: translateX(20px);
   }
   .msg-alert {
-    transform: translateX(-320px) translateY(45px);
+    transform: translateX(0px) translateY(0px);
     p {
       position: relative;
       font-family: "Roboto" !important;
@@ -193,14 +196,6 @@
       font-family: "Roboto" !important;
       font-size: 20px !important;
       font-weight: 400 !important;
-    }
-  }
-
-  .mailchimp-form {
-    .msg-alert {
-      p{
-        left: -30px;
-      }
     }
   }
 }
@@ -313,7 +308,7 @@
       transform: translateX(20px);
     }
     .msg-alert {
-      transform: translateX(-320px) translateY(45px);
+      transform: translateX(0px) translateY(0px);
       p {
         position: relative;
         font-family: "Roboto" !important;
