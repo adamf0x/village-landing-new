@@ -1,5 +1,6 @@
 import React from "react";
 import image from "./images/4-cropped.png";
+<<<<<<< HEAD
 import hex2 from "./images/hex2.png";
 import { Button, InputGroup, FormControl } from "react-bootstrap";
 import Section from "./Section";
@@ -15,11 +16,26 @@ const SectionTwo = (props) => {
       <div className="sectionTwo-text-container">
         <h1>{props.header}</h1>
         <h2>{props.text}</h2>
+=======
+import motherInKitchen from "./images/mother-in-kitchen.png";
+import hex2 from "./images/hex2.png";
+import{Button} from 'react-bootstrap'
+
+const Section = (props) => {
+  return (
+    <div className="sectionTwo-container-outer">
+      <div className="sectionTwo-text-container">
+        <h1>{props.header}</h1>
+        <h2>
+          {props.text}
+        </h2>
+>>>>>>> master
       </div>
       <div className="sectionTwo-image-container">
         <img className="sectionTwo-shape-1" src={hex2} />
         <div className="sectionTwo-shape-2" />
         <div className="sectionTwo-image-background" />
+<<<<<<< HEAD
         <img className="sectionTwo-image" src={props.imageSource} />
       </div>
     </div>
@@ -37,11 +53,15 @@ const SectionTwo = (props) => {
       <div className="sectionTwo-image-container">
         <div className="sectionTwo-image-background" />
         <img className="sectionTwo-image" src={props.imageSource} />
+=======
+        <img className="sectionTwo-image" src={props.imageSource}/>
+>>>>>>> master
       </div>
     </div>
   );
 };
 
+<<<<<<< HEAD
 const SimpleForm = () => {
   <MailchimpSubscribe
     url={
@@ -97,3 +117,6 @@ export const Signup = (props) => {
 };
 
 export default SectionTwo;
+=======
+export default Section;
+>>>>>>> master

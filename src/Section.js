@@ -7,6 +7,10 @@ import { Button } from "react-bootstrap";
 const Section = (props) => {
   return (
     <div className="section-container-outer">
+<<<<<<< HEAD
+=======
+      <div></div>
+>>>>>>> master
       <div className="section-text-container">
         <h1>{props.header}</h1>
         <h2>{props.text}</h2>
@@ -22,7 +26,11 @@ const Section = (props) => {
               console.log("hello");
             }}
           >
+<<<<<<< HEAD
             Get Started!
+=======
+            Get Started! 
+>>>>>>> master
           </Button>
         )}
       </div>

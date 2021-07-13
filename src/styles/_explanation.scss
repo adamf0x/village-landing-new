@@ -1,10 +1,18 @@
 @import "_mixin";
 
 .explanation-container-outer {
+<<<<<<< HEAD
   display: flex;
   height: 400px;
   flex-direction: column;
   justify-content: center;
+=======
+  margin-top: 50px;
+  display: flex;
+  height: 600px;
+  justify-content: flex-start;
+  flex-direction: column;
+>>>>>>> master
   align-items: center;
 }
 
@@ -21,7 +29,11 @@
   h2 {
     color: #555b5c !important;
     font-family: "Roboto" !important;
+<<<<<<< HEAD
     font-size: 14px !important;
+=======
+    font-size: 25px !important;
+>>>>>>> master
     font-weight: 400 !important;
   }
 }
@@ -32,9 +44,14 @@
 }
 
 .explanation-content-container {
+<<<<<<< HEAD
   display: flex;
   margin-top: 20px;
   width: 100%;
+=======
+  margin-top: 20px;
+  display: flex;
+>>>>>>> master
   justify-content: center;
 }
 .youtube-thumbnial-container {
@@ -47,6 +64,7 @@
   transform: translateX(125px) translateY(100px - 31px);
 }
 
+<<<<<<< HEAD
 .iPhone-diagram {
   order: 1;
   width: 150px;
@@ -55,11 +73,52 @@
 }
 
 .modal-content {
+=======
+.features-container{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-rows: 30%;
+}
+
+.feature-1{
+  justify-self: center;
+  align-self: center;
+  background-color: red;
+  grid-column: 2;
+}
+
+.feature-2{
+  justify-self: center;
+  align-self: center;
+  background-color: red;
+  grid-column: 2;
+}
+
+.feature-3{
+  justify-self: center;
+  align-self: center;
+  background-color: red;
+  grid-column: 2;
+}
+
+.iPhone-diagram{
+  width: 150px;
+  height: 300px;
+  justify-self: center;
+  align-self: center;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.modal-content{
+>>>>>>> master
   align-content: center !important;
   justify-content: center !important;
   transform: translateX(-30px);
 }
 
+<<<<<<< HEAD
 .features-container {
   display: flex;
   flex-direction: row;
@@ -115,10 +174,16 @@
   .explanation-container-outer {
     margin-top: 50px;
     height: 500px;
+=======
+@media screen and (min-width: 768px) {
+  .explanation-container-outer {
+    margin-top: 0;
+>>>>>>> master
   }
   .explanation-text-container {
     h2 {
       width: 50%;
+<<<<<<< HEAD
       font-size: 25px !important;
     }
   }  
@@ -138,11 +203,17 @@
       font-family: "Roboto" !important;
       font-size: 15px !important;
       color: #555B5C !important; 
+=======
+>>>>>>> master
     }
   }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 1315px) {
+=======
+@media screen and (min-width: 1280px) {
+>>>>>>> master
   .explanation-video {
     width: 800px;
     height: 500px;
@@ -151,6 +222,7 @@
     transform: translateX(400px - 44px) translateY(250px - 31px);
   }
 
+<<<<<<< HEAD
   .explanation-container-outer {
     margin-bottom: 50px;
   }
@@ -213,5 +285,27 @@
       width: 130px;
       height: 130px;
     }
+=======
+
+  .feature-1{
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .feature-2{
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .feature-3{
+    grid-row: 2;
+    grid-column: 3;
+  }
+
+  .iPhone-diagram{
+    width: 400px;
+    height: 800px;
+    grid-column: 2;
+>>>>>>> master
   }
 }
