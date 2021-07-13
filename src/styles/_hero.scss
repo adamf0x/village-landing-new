@@ -1,6 +1,5 @@
 @import "_mixin";
 
-<<<<<<< HEAD
 .hero-container-outer {
   background-color: #29b1ad;
   height: 700px;
@@ -12,31 +11,6 @@
 
 .hero-container-text {
   opacity: 0;
-=======
-h1 {
-  font-family: "Comfortaa", cursive !important;
-  font-size: 25px !important;
-  font-weight: 700 !important;
-  color: white !important;
-}
-
-h2 {
-  font-family: "Roboto" !important;
-  font-size: 15px !important;
-  font-weight: 400 !important;
-  color: white;
-}
-
-.hero-container-outer {
-  background-color: #29B1AD;
-  height: 600px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.hero-container-text {
->>>>>>> master
   display: flex;
   flex: 2;
   order: 2;
@@ -44,7 +18,6 @@ h2 {
   justify-content: center;
   flex-direction: column;
   width: 80%;
-<<<<<<< HEAD
   margin-top: -10;
   -webkit-animation: fadein 2s 1s ease-in forwards;
   -moz-animation: fadein 2s 1s ease-in forwards;
@@ -70,11 +43,6 @@ h2 {
 
 .hero-container-image {
   opacity: 0;
-=======
-}
-
-.hero-container-image {
->>>>>>> master
   display: flex;
   flex: 1;
   order: 1;
@@ -82,7 +50,6 @@ h2 {
   justify-content: center;
   align-content: center;
   margin-top: 5%;
-<<<<<<< HEAD
   height: 95%;
   margin-bottom: 10%;
   -webkit-animation: fadein 2s ease-in forwards;
@@ -90,18 +57,12 @@ h2 {
   -ms-animation: fadein 2s ease-in forwards;
   -o-animation: fadein 2s ease-in forwards;
   animation: fadein 2s ease-in forwards;
-=======
->>>>>>> master
 }
 .hero-image-background {
   border-radius: 50%;
   height: 20em;
   width: 20em;
-<<<<<<< HEAD
   box-shadow: 5px 15px 24px -15px #000000;
-=======
-  box-shadow: 5px 15px 24px -15px #929292;
->>>>>>> master
   background-color: #ef7432;
 }
 
@@ -113,7 +74,6 @@ h2 {
   transform: translateY(8px);
 }
 
-<<<<<<< HEAD
 .hero-request {
   opacity: 0;
   position: absolute;
@@ -182,19 +142,6 @@ h2 {
     display: flex;
     order: 3;
     justify-content: space-evenly;
-=======
-@media screen and (min-width: 500px) {
-  h1 {
-    font-family: "Comfortaa", cursive !important;
-    font-size: 45px !important;
-    color: white;
-  }
-  h2 {
-    font-family: "Roboto" !important;
-    font-size: 25px !important;
-    font-weight: 400 !important;
-    color: white;
->>>>>>> master
   }
 }
 
@@ -214,7 +161,6 @@ h2 {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 1315px) {
   .hero-container-text {
     width: 100%;
@@ -225,19 +171,6 @@ h2 {
     h2 {
       font-size: 25px !important;
     }
-=======
-@media screen and (min-width: 1280px) {
-  h1 {
-    font-family: "Comfortaa", cursive !important;
-    font-size: 80px !important;
-    color: white !important;
-  }
-  h2 {
-    font-family: "Roboto" !important;
-    font-size: 25px !important;
-    font-weight: 400 !important;
-    color: white;
->>>>>>> master
   }
 
   .hero-container-image {
@@ -246,29 +179,19 @@ h2 {
     order: 1;
     align-self: center;
     justify-content: center;
-<<<<<<< HEAD
     margin-top: 0;
-=======
->>>>>>> master
   }
 
   .hero-image {
     position: absolute;
     border-radius: 50%;
-<<<<<<< HEAD
     height: 48em;
     width: 48em;
     transform: translateY(128px) translateX(-40px);
-=======
-    height: 49em;
-    width: 49em;
-    transform: translateY(158px) translateX(-100px);
->>>>>>> master
   }
 
   .hero-image-background {
     border-radius: 50%;
-<<<<<<< HEAD
     height: 49em;
     width: 49em;
     box-shadow: 5px 15px 24px -15px #929292;
@@ -281,13 +204,6 @@ h2 {
     width: 810px;
     height: 280px;
     transform: translateY(670px) translateX(400px);
-=======
-    height: 50em;
-    width: 50em;
-    box-shadow: 5px 15px 24px -15px #929292;
-    background-color: #ef7432;
-    transform: translateY(150px) translateX(-100px);
->>>>>>> master
   }
 
   .hero-container-outer {
@@ -298,7 +214,6 @@ h2 {
     justify-content: space-around;
     flex-direction: row;
   }
-<<<<<<< HEAD
 
   .buttons {
     display: flex;
@@ -353,6 +268,4 @@ h2 {
   to {
     opacity: 1;
   }
-=======
->>>>>>> master
 }

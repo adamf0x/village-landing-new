@@ -4,7 +4,6 @@
 @import "_sectionTwo";
 @import "_fonts";
 @import "_explanation";
-<<<<<<< HEAD
 @import "_faq";
 @import "_teamMembers";
 @import "_footer";
@@ -22,16 +21,11 @@ svg{
     margin-top: 20%;
 }
 
-=======
-@import "~bootstrap/scss/bootstrap";
-
->>>>>>> master
 .app-container{
     display: grid;
     row-gap: 2%;
 }
 
-<<<<<<< HEAD
 .item-g{
     margin-top: 10%;
 }
@@ -42,11 +36,6 @@ svg{
     }
     .app-container{
         row-gap: 10%;
-=======
-@media screen and (min-width: 1280px){
-    .app-container{
-        row-gap: 20%;
->>>>>>> master
     }
     .divider{
         display: none;

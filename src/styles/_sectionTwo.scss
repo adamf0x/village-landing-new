@@ -1,14 +1,9 @@
 .sectionTwo-container-outer {
-<<<<<<< HEAD
   background-color: #29b1ad;
-=======
-  background-color: #29B1AD;
->>>>>>> master
   @include angle(before, 3deg);
   @include angle(after, 3deg, flip);
   height: 300px;
   display: flex;
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -25,16 +20,11 @@
   align-items: center;
   flex-direction: column;
   margin-top: -10%;
-=======
-  justify-content: space-around;
-  flex-direction: column;
->>>>>>> master
 }
 
 .sectionTwo-text-container {
   position: absolute;
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
   justify-content: center;
   flex: 2;
@@ -46,30 +36,13 @@
     font-weight: 700 !important;
     color: white !important;
     font-size: 30px !important;
-=======
-  align-self: center;
-  justify-content: center;
-  flex-direction: column;
-  flex: 2;
-  order: 2;
-  width: 80%;
-  h1 {
-    font-family: 'Comfortaa' !important;
-    font-weight: 700 !important;
-    color: white !important;
->>>>>>> master
   }
   h2 {
     color: white !important;
     font-family: "Roboto" !important;
-<<<<<<< HEAD
     font-size: 14px !important;
     font-weight: 400 !important;
     margin-bottom: 3%;
-=======
-    font-size: 15px !important;
-    font-weight: 400 !important;
->>>>>>> master
   }
 }
 
@@ -88,11 +61,7 @@
   width: 19em;
   box-shadow: 5px 15px 24px -15px #000000;
   background-color: #153e69;
-<<<<<<< HEAD
   transform: translateY(-240px);
-=======
-  transform: translateY(-290px);
->>>>>>> master
 }
 
 .sectionTwo-image {
@@ -100,7 +69,6 @@
   height: 18em;
   width: 18em;
   border-radius: 50%;
-<<<<<<< HEAD
   transform: translateY(-232px);
 }
 
@@ -212,35 +180,11 @@
       margin-left: 10px;
     }
   }
-=======
-  transform: translateY(-282px);
-}
-
-.sectionTwo-shape-1 {
-    position: absolute;
-    z-index: -1;
-    width: 45px;
-    height: 45px;
-    transform: translateY(5px) translateX(50px) rotate(-10deg);
-}
-
-.sectionTwo-shape-2 {
-    position: absolute;
-    z-index: -2;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: #ef7432;
-    transform: translateY(-60px) translateX(120px);
->>>>>>> master
 }
 
 @media screen and (min-width: 768px) {
   .sectionTwo-text-container {
-<<<<<<< HEAD
     margin-top: 5%;
-=======
->>>>>>> master
     h1 {
       font-family: "Comfortaa", cursive !important;
       font-size: 50px !important;
@@ -255,23 +199,15 @@
   }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 1315px) {
   .sectionTwo-container-outer {
     background-color: #29b1ad;
     height: 500px;
-=======
-@media screen and (min-width: 1280px) {
-  .sectionTwo-container-outer {
-    background-color: #29B1AD;
-    height: 600px;
->>>>>>> master
     @include angle(before, 3deg);
     @include angle(after, 3deg, flip);
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-<<<<<<< HEAD
     margin-top: -5%;
   }
 
@@ -289,12 +225,6 @@
     position: static;
     margin-right: 5%;
     margin-top: 0%;
-=======
-  }
-  .sectionTwo-text-container {
-    position: static;
-    margin-right: 10%;
->>>>>>> master
     h1 {
       font-family: "Comfortaa", cursive !important;
       font-size: 60px !important;
@@ -349,7 +279,6 @@
     background-color: #ef7432;
     transform: translateY(650px) translateX(200px);
   }
-<<<<<<< HEAD
   .signup-container {
     width: 425px;
   }
@@ -394,6 +323,4 @@
       margin-left: -80px;
     }
   }
-=======
->>>>>>> master
 }
