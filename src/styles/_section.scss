@@ -14,9 +14,17 @@
   flex-direction: column;
   order: 2;
   width: 80%;
+<<<<<<< HEAD
+  margin-top: 20px;
   h1 {
     font-weight: 700 !important;
     color: #153e69 !important;
+    font-size: 30px !important;
+=======
+  h1 {
+    font-weight: 700 !important;
+    color: #153e69 !important;
+>>>>>>> master
   }
   h2 {
     color: #555b5c !important;
@@ -34,8 +42,15 @@
   }
 
   .get-started-button {
+<<<<<<< HEAD
+    display: none;
+    border: none !important;
+    margin-top: 15px;
+    width: 100%;
+=======
     margin-top: 15px;
     width: 220px;
+>>>>>>> master
     height: 50px;
     background-color: #29B1AD !important;
     border-radius: 30px 30px 30px 30px;
@@ -131,7 +146,11 @@
   }
 }
 
+<<<<<<< HEAD
+@media screen and (min-width: 1315px) {
+=======
 @media screen and (min-width: 1280px) {
+>>>>>>> master
   .section-container-outer {
     display: flex;
     height: 600px;
@@ -159,6 +178,20 @@
         font-size: 25px !important;
         font-weight: 300 !important;
       }
+<<<<<<< HEAD
+
+      .get-started-button {
+        margin-top: 15px;
+        width: 220px;
+        height: 50px;
+        background-color: #29B1AD !important;
+        border-radius: 30px 30px 30px 30px;
+        font-family: "Comfortaa", cursive !important;
+        font-weight: 700 !important;
+        font-size: 20px;
+      }
+=======
+>>>>>>> master
   }
   .section-image-container {
     display: flex;
@@ -215,4 +248,8 @@
     background-color: #29B1AD;
     transform: translateY(800px) translateX(-330px);
   }
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
 }

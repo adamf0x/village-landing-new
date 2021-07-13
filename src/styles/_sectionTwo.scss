@@ -1,16 +1,52 @@
 .sectionTwo-container-outer {
+<<<<<<< HEAD
+  background-color: #29b1ad;
+=======
   background-color: #29B1AD;
+>>>>>>> master
   @include angle(before, 3deg);
   @include angle(after, 3deg, flip);
   height: 300px;
   display: flex;
+<<<<<<< HEAD
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15%;
+}
+
+.sectionTwo-container-outer-opposite {
+  background-color: #29b1ad;
+  @include angle(before, 3deg, flip);
+  @include angle(after, 3deg);
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -10%;
+=======
   justify-content: space-around;
   flex-direction: column;
+>>>>>>> master
 }
 
 .sectionTwo-text-container {
   position: absolute;
   display: flex;
+<<<<<<< HEAD
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+  order: 2;
+  width: 90%;
+  margin-top: 12%;
+  h1 {
+    font-family: "Comfortaa" !important;
+    font-weight: 700 !important;
+    color: white !important;
+    font-size: 30px !important;
+=======
   align-self: center;
   justify-content: center;
   flex-direction: column;
@@ -21,12 +57,19 @@
     font-family: 'Comfortaa' !important;
     font-weight: 700 !important;
     color: white !important;
+>>>>>>> master
   }
   h2 {
     color: white !important;
     font-family: "Roboto" !important;
+<<<<<<< HEAD
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    margin-bottom: 3%;
+=======
     font-size: 15px !important;
     font-weight: 400 !important;
+>>>>>>> master
   }
 }
 
@@ -45,7 +88,11 @@
   width: 19em;
   box-shadow: 5px 15px 24px -15px #000000;
   background-color: #153e69;
+<<<<<<< HEAD
+  transform: translateY(-240px);
+=======
   transform: translateY(-290px);
+>>>>>>> master
 }
 
 .sectionTwo-image {
@@ -53,6 +100,119 @@
   height: 18em;
   width: 18em;
   border-radius: 50%;
+<<<<<<< HEAD
+  transform: translateY(-232px);
+}
+
+.sectionTwo-shape-1 {
+  position: absolute;
+  z-index: -1;
+  width: 45px;
+  height: 45px;
+  transform: translateY(45px) translateX(50px) rotate(-10deg);
+}
+
+.sectionTwo-shape-2 {
+  position: absolute;
+  z-index: -2;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ef7432;
+  transform: translateY(-20px) translateX(120px);
+}
+
+.input-area {
+  border-radius: 30px 30px 30px 30px !important;
+  padding-right: 100px;
+}
+
+.signup-container {
+  width: 90%;
+}
+
+.light-button {
+  display: flex;
+  justify-content: center;
+}
+
+.mailchimp-form-light{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    border-radius: 30px 30px 30px 30px !important;
+    padding-right: 100px;
+    height: 40px;
+    border: none !important;
+    font-family: "Comfortaa" !important;
+    width: 340px;
+  }
+  button {
+    width: 100px;
+    height: 40px;
+    border: none !important;
+    border-radius: 30px 30px 30px 30px !important;
+    margin-left: -70px;
+    z-index: 99 !important;
+    background-color: #29b1ad !important;
+    color: white;
+    font-family: "Roboto" !important;
+    text-align: center;
+  }
+  .msg-alert {
+    position: absolute;
+    transform: translateY(50px) translateX(-25px);
+    p {
+      position: relative;
+      font-family: "Roboto" !important;
+      color: white !important;
+      width: 300px;
+    }
+  }
+}
+
+.mailchimp-light-container{
+  display: flex;
+  // flex-direction: column;
+  // justify-content:stretch;
+}
+.mailchimp-form {
+  display: flex;
+  flex-grow: 0 !important;
+  flex-basis: 600px !important;
+  flex-wrap: wrap;
+  input {
+    border-radius: 30px 30px 30px 30px !important;
+    height: 40px;
+    border: none !important;
+    font-family: "Comfortaa" !important;
+    width: 320px !important;
+    margin-left: -10px;
+  }
+  button {
+    width: 90px;
+    height: 40px;
+    border: none !important;
+    border-radius: 30px 30px 30px 30px !important;
+    margin-left: -90px;
+    z-index: 99 !important;
+    background-color: #113d69 !important;
+    color: white;
+    font-family: "Roboto" !important;
+    text-align: center;
+    transform: translateX(20px);
+  }
+  .msg-alert {
+    p {
+      position: relative;
+      font-family: "Roboto" !important;
+      color: white !important;
+      width: 300px;
+      margin-left: 10px;
+    }
+  }
+=======
   transform: translateY(-282px);
 }
 
@@ -72,10 +232,15 @@
     border-radius: 50%;
     background-color: #ef7432;
     transform: translateY(-60px) translateX(120px);
+>>>>>>> master
 }
 
 @media screen and (min-width: 768px) {
   .sectionTwo-text-container {
+<<<<<<< HEAD
+    margin-top: 5%;
+=======
+>>>>>>> master
     h1 {
       font-family: "Comfortaa", cursive !important;
       font-size: 50px !important;
@@ -90,19 +255,46 @@
   }
 }
 
+<<<<<<< HEAD
+@media screen and (min-width: 1315px) {
+  .sectionTwo-container-outer {
+    background-color: #29b1ad;
+    height: 500px;
+=======
 @media screen and (min-width: 1280px) {
   .sectionTwo-container-outer {
     background-color: #29B1AD;
     height: 600px;
+>>>>>>> master
     @include angle(before, 3deg);
     @include angle(after, 3deg, flip);
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+<<<<<<< HEAD
+    margin-top: -5%;
+  }
+
+  .sectionTwo-container-outer-opposite {
+    background-color: #29b1ad;
+    @include angle(before, 3deg, flip);
+    @include angle(after, 3deg);
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .sectionTwo-text-container {
+    position: static;
+    margin-right: 5%;
+    margin-top: 0%;
+=======
   }
   .sectionTwo-text-container {
     position: static;
     margin-right: 10%;
+>>>>>>> master
     h1 {
       font-family: "Comfortaa", cursive !important;
       font-size: 60px !important;
@@ -157,4 +349,51 @@
     background-color: #ef7432;
     transform: translateY(650px) translateX(200px);
   }
+<<<<<<< HEAD
+  .signup-container {
+    width: 425px;
+  }
+
+  .mailchimp-form {
+    display: flex;
+    input {
+      border-radius: 30px 30px 30px 30px !important;
+      height: 40px;
+      border: none !important;
+      font-family: "Comfortaa" !important;
+      width: 320px !important;
+      margin-left: -10px;
+    }
+    button {
+      width: 100px;
+      height: 40px;
+      border: none !important;
+      border-radius: 30px 30px 30px 30px !important;
+      margin-left: -90px;
+      z-index: 99 !important;
+      background-color: #113d69 !important;
+      color: white;
+      font-family: "Roboto" !important;
+      text-align: center;
+      transform: translateX(20px);
+    }
+    .msg-alert {
+      p {
+        position: relative;
+        font-family: "Roboto" !important;
+        color: white !important;
+        width: 300px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .mailchimp-form-light {
+
+    width: 400px;
+    button {
+      margin-left: -80px;
+    }
+  }
+=======
+>>>>>>> master
 }

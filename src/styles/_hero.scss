@@ -1,5 +1,18 @@
 @import "_mixin";
 
+<<<<<<< HEAD
+.hero-container-outer {
+  background-color: #29b1ad;
+  height: 700px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.hero-container-text {
+  opacity: 0;
+=======
 h1 {
   font-family: "Comfortaa", cursive !important;
   font-size: 25px !important;
@@ -23,6 +36,7 @@ h2 {
 }
 
 .hero-container-text {
+>>>>>>> master
   display: flex;
   flex: 2;
   order: 2;
@@ -30,9 +44,37 @@ h2 {
   justify-content: center;
   flex-direction: column;
   width: 80%;
+<<<<<<< HEAD
+  margin-top: -10;
+  -webkit-animation: fadein 2s 1s ease-in forwards;
+  -moz-animation: fadein 2s 1s ease-in forwards;
+  -ms-animation: fadein 2s 1s ease-in forwards;
+  -o-animation: fadein 2s 1s ease-in forwards;
+  animation: fadein 2s 1s ease-in forwards;
+  h1 {
+    font-family: "Comfortaa", cursive !important;
+    font-size: 25px !important;
+    font-weight: 700 !important;
+    color: white !important;
+    margin-right: 5%;
+  }
+
+  h2 {
+    font-family: "Roboto" !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    color: white;
+    margin-right: 20%;
+  }
 }
 
 .hero-container-image {
+  opacity: 0;
+=======
+}
+
+.hero-container-image {
+>>>>>>> master
   display: flex;
   flex: 1;
   order: 1;
@@ -40,12 +82,26 @@ h2 {
   justify-content: center;
   align-content: center;
   margin-top: 5%;
+<<<<<<< HEAD
+  height: 95%;
+  margin-bottom: 10%;
+  -webkit-animation: fadein 2s ease-in forwards;
+  -moz-animation: fadein 2s ease-in forwards;
+  -ms-animation: fadein 2s ease-in forwards;
+  -o-animation: fadein 2s ease-in forwards;
+  animation: fadein 2s ease-in forwards;
+=======
+>>>>>>> master
 }
 .hero-image-background {
   border-radius: 50%;
   height: 20em;
   width: 20em;
+<<<<<<< HEAD
+  box-shadow: 5px 15px 24px -15px #000000;
+=======
   box-shadow: 5px 15px 24px -15px #929292;
+>>>>>>> master
   background-color: #ef7432;
 }
 
@@ -57,6 +113,76 @@ h2 {
   transform: translateY(8px);
 }
 
+<<<<<<< HEAD
+.hero-request {
+  opacity: 0;
+  position: absolute;
+  width: 360px;
+  height: 140px;
+  transform: translateY(260px);
+  -webkit-animation: fadein 2s 0.5s ease-in forwards;
+  -moz-animation: fadein 2s 0.5s ease-in forwards;
+  -ms-animation: fadein 2s 0.5s ease-in forwards;
+  -o-animation: fadein 2s 0.5s ease-in forwards;
+  animation: fadein 2s 0.5s ease-in forwards;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  order: 2;
+  margin-bottom: 5%;
+}
+
+.buttons {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  order: 3;
+  justify-content: space-evenly;
+  align-items: center;
+  -webkit-animation: fadein 2s 1.5s ease-in forwards;
+  -moz-animation: fadein 2s 1.5s ease-in forwards;
+  -ms-animation: fadein 2s 1.5s ease-in forwards;
+  -o-animation: fadein 2s 1.5s ease-in forwards;
+  animation: fadein 2s 1.5s ease-in forwards;
+  h3 {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: white;
+    margin-bottom: 0 !important;
+  }
+}
+.inner-buttons{
+  display: flex;
+  flex-direction: row;
+}
+.btn {
+  background: none !important;
+  border: none !important;
+}
+
+@media screen and (min-width: 500px) {
+  .hero-container-text {
+    h1 {
+      font-family: "Comfortaa", cursive !important;
+      font-size: 30px !important;
+      color: white;
+    }
+    h2 {
+      font-family: "Roboto" !important;
+      font-size: 20px !important;
+      font-weight: 400 !important;
+      color: white;
+    }
+  }
+  .buttons {
+    display: flex;
+    order: 3;
+    justify-content: space-evenly;
+=======
 @media screen and (min-width: 500px) {
   h1 {
     font-family: "Comfortaa", cursive !important;
@@ -68,6 +194,7 @@ h2 {
     font-size: 25px !important;
     font-weight: 400 !important;
     color: white;
+>>>>>>> master
   }
 }
 
@@ -87,6 +214,18 @@ h2 {
   }
 }
 
+<<<<<<< HEAD
+@media screen and (min-width: 1315px) {
+  .hero-container-text {
+    width: 100%;
+    margin-top: 2%;
+    h1 {
+      font-size: 80px !important;
+    }
+    h2 {
+      font-size: 25px !important;
+    }
+=======
 @media screen and (min-width: 1280px) {
   h1 {
     font-family: "Comfortaa", cursive !important;
@@ -98,6 +237,7 @@ h2 {
     font-size: 25px !important;
     font-weight: 400 !important;
     color: white;
+>>>>>>> master
   }
 
   .hero-container-image {
@@ -106,23 +246,48 @@ h2 {
     order: 1;
     align-self: center;
     justify-content: center;
+<<<<<<< HEAD
+    margin-top: 0;
+=======
+>>>>>>> master
   }
 
   .hero-image {
     position: absolute;
     border-radius: 50%;
+<<<<<<< HEAD
+    height: 48em;
+    width: 48em;
+    transform: translateY(128px) translateX(-40px);
+=======
     height: 49em;
     width: 49em;
     transform: translateY(158px) translateX(-100px);
+>>>>>>> master
   }
 
   .hero-image-background {
     border-radius: 50%;
+<<<<<<< HEAD
+    height: 49em;
+    width: 49em;
+    box-shadow: 5px 15px 24px -15px #929292;
+    background-color: #ef7432;
+    transform: translateY(120px) translateX(-40px);
+  }
+
+  .hero-request {
+    position: absolute;
+    width: 810px;
+    height: 280px;
+    transform: translateY(670px) translateX(400px);
+=======
     height: 50em;
     width: 50em;
     box-shadow: 5px 15px 24px -15px #929292;
     background-color: #ef7432;
     transform: translateY(150px) translateX(-100px);
+>>>>>>> master
   }
 
   .hero-container-outer {
@@ -133,4 +298,61 @@ h2 {
     justify-content: space-around;
     flex-direction: row;
   }
+<<<<<<< HEAD
+
+  .buttons {
+    display: flex;
+    order: 3;
+    justify-content: space-evenly;
+    margin-left: 150px;
+    margin-right: 0;
+    margin-top: -5%;
+  }
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    margin-bottom: 0;
+    align-items: flex-start;
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+=======
+>>>>>>> master
 }

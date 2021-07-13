@@ -4,16 +4,49 @@
 @import "_sectionTwo";
 @import "_fonts";
 @import "_explanation";
+<<<<<<< HEAD
+@import "_faq";
+@import "_teamMembers";
+@import "_footer";
 @import "~bootstrap/scss/bootstrap";
 
+svg{
+    width: 200px;
+    height: 200px;
+  }
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+=======
+@import "~bootstrap/scss/bootstrap";
+
+>>>>>>> master
 .app-container{
     display: grid;
     row-gap: 2%;
 }
 
+<<<<<<< HEAD
+.item-g{
+    margin-top: 10%;
+}
+
+@media screen and (min-width: 1315px){
+    .item-a{
+        margin-bottom: 9%;
+    }
+    .app-container{
+        row-gap: 10%;
+=======
 @media screen and (min-width: 1280px){
     .app-container{
         row-gap: 20%;
+>>>>>>> master
     }
     .divider{
         display: none;
