@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.f823b679.chunk.css",
-    "main.js": "/static/js/main.a8cc4755.chunk.js",
-    "main.js.map": "/static/js/main.a8cc4755.chunk.js.map",
+    "main.css": "/static/css/main.888da21a.chunk.css",
+    "main.js": "/static/js/main.f9628837.chunk.js",
+    "main.js.map": "/static/js/main.f9628837.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d5d851d6.js",
     "runtime-main.js.map": "/static/js/runtime-main.d5d851d6.js.map",
-    "static/js/2.9ff51456.chunk.js": "/static/js/2.9ff51456.chunk.js",
-    "static/js/2.9ff51456.chunk.js.map": "/static/js/2.9ff51456.chunk.js.map",
+    "static/js/2.c2e524b1.chunk.js": "/static/js/2.c2e524b1.chunk.js",
+    "static/js/2.c2e524b1.chunk.js.map": "/static/js/2.c2e524b1.chunk.js.map",
     "static/js/3.8fa9c884.chunk.js": "/static/js/3.8fa9c884.chunk.js",
     "static/js/3.8fa9c884.chunk.js.map": "/static/js/3.8fa9c884.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.f823b679.chunk.css.map": "/static/css/main.f823b679.chunk.css.map",
-    "static/js/2.9ff51456.chunk.js.LICENSE.txt": "/static/js/2.9ff51456.chunk.js.LICENSE.txt",
+    "static/css/main.888da21a.chunk.css.map": "/static/css/main.888da21a.chunk.css.map",
+    "static/js/2.c2e524b1.chunk.js.LICENSE.txt": "/static/js/2.c2e524b1.chunk.js.LICENSE.txt",
     "static/media/4-cropped.4ca2ca45.png": "/static/media/4-cropped.4ca2ca45.png",
     "static/media/Ashley.31493009.png": "/static/media/Ashley.31493009.png",
     "static/media/Donovan.297b652e.png": "/static/media/Donovan.297b652e.png",
@@ -19,7 +19,7 @@
     "static/media/Michael.6f9607e5.png": "/static/media/Michael.6f9607e5.png",
     "static/media/Nicholas.bd9fd860.png": "/static/media/Nicholas.bd9fd860.png",
     "static/media/Request-medium.4af44974.png": "/static/media/Request-medium.4af44974.png",
-    "static/media/Village-iPhoneMock.1be133be.png": "/static/media/Village-iPhoneMock.1be133be.png",
+    "static/media/Village-iPhoneMock.e3e37767.png": "/static/media/Village-iPhoneMock.e3e37767.png",
     "static/media/family.74010834.png": "/static/media/family.74010834.png",
     "static/media/group-of-people.de73fac8.png": "/static/media/group-of-people.de73fac8.png",
     "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d5d851d6.js",
-    "static/js/2.9ff51456.chunk.js",
-    "static/css/main.f823b679.chunk.css",
-    "static/js/main.a8cc4755.chunk.js"
+    "static/js/2.c2e524b1.chunk.js",
+    "static/css/main.888da21a.chunk.css",
+    "static/js/main.f9628837.chunk.js"
   ]
 }

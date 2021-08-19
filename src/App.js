@@ -14,6 +14,9 @@ import family from "./images/family.png";
 import Footer from "./Footer";
 import { React, useEffect, useState } from "react";
 import useWindowDimensions from "./GetWindowDimensions";
+import { Button, Modal } from "react-bootstrap";
+import appStoreButon from "./images/AppStore-btn.png";
+import googlePlayButton from "./images/PlayStore-btn.png";
 
 function App() {
   const { width, height } = useWindowDimensions();
@@ -23,6 +26,17 @@ function App() {
       isLoading(false);
     }, 2000);
   }, [Hero, Navigation]);
+
+  const [downloadModal, setDownloadModal] = useState(false);
+  const openDownloadModal = () => {
+    console.log("here");
+    setDownloadModal(true);
+  };
+
+  const closeDownloadModal = () => {
+    setDownloadModal(false);
+  };
+
   return loading ? (
     <div className="loading">
       <svg
@@ -54,7 +68,32 @@ function App() {
     </div>
   ) : (
     <>
-      <Navigation></Navigation>
+      {downloadModal && (
+        <Modal
+          show={downloadModal}
+          onHide={closeDownloadModal}
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+          className="bootstrap-modal"
+        >
+          <div className="buttons">
+            <p>Download now for FREE</p>
+            <div className="inner-buttons">
+              <Button>
+                <a href="https://apps.apple.com/ca/app/village/id1549408764">
+                  <img src={appStoreButon} width={150}></img>
+                </a>
+              </Button>
+              <Button>
+                <a href="http://play.google.com/store/apps/details?id=co.atomic47.village.android">
+                  <img src={googlePlayButton} width={150}></img>
+                </a>
+              </Button>
+            </div>
+          </div>
+        </Modal>
+      )}
+      <Navigation openDownloadModal={openDownloadModal}></Navigation>
       <div className="app-container">
         <div className="item-a">
           <Hero />

@@ -6,8 +6,11 @@ import Section from "./Section";
 import Mailchimp from "react-mailchimp-form";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { faSign } from "@fortawesome/free-solid-svg-icons";
+import appStoreButon from "./images/AppStore-btn.png";
+import googlePlayButton from "./images/PlayStore-btn.png";
 
-const url="https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d"
+const url =
+  "https://weebly.us17.list-manage.com/subscribe/post?u=cc2921b149dcf4cba76383047&id=04d8e5472d";
 
 const SectionTwo = (props) => {
   return props.slant !== "opposite" ? (
@@ -65,7 +68,7 @@ export const Signup = (props) => {
           },
         ]}
       />
-     {/* <form className="mailchimp-form" action="https://weebly.us17.list-manage.com/subscribe/post" method="POST">
+      {/* <form className="mailchimp-form" action="https://weebly.us17.list-manage.com/subscribe/post" method="POST">
        <input type="hidden" name="u" value="cc2921b149dcf4cba76383047"/>
         <input type="hidden" name="id" value="04d8e5472d"/>
         <input name="MERGE0" id="MERGE0" type="email" required={true} placeholder="Sign up for our newsletter!"></input>
@@ -86,7 +89,7 @@ export const Signup = (props) => {
           },
         ]}
       />
-       {/* <form className="mailchimp-form-light" action="https://weebly.us17.list-manage.com/subscribe/post" method="POST">
+      {/* <form className="mailchimp-form-light" action="https://weebly.us17.list-manage.com/subscribe/post" method="POST">
        <input type="hidden" name="u" value="cc2921b149dcf4cba76383047"/>
         <input type="hidden" name="id" value="04d8e5472d"/>
         <input name="MERGE0" id="MERGE0" type="email" required={true} placeholder="Sign up for our newsletter!"></input>

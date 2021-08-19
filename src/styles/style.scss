@@ -9,6 +9,18 @@
 @import "_footer";
 @import "~bootstrap/scss/bootstrap";
 
+.modal-content{
+    background-color: #29b1ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .buttons{
+        margin-left: 0;
+        animation: none;
+        opacity: 1;
+    }
+}
+
 svg{
     width: 200px;
     height: 200px;

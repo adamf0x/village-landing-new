@@ -4,9 +4,9 @@
   @include angle(after, 3deg, flip);
   height: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   margin-top: 15%;
 }
 
@@ -145,8 +145,10 @@
   // flex-direction: column;
   // justify-content:stretch;
 }
+
 .mailchimp-form {
   display: flex;
+  justify-content: center;
   flex-grow: 0 !important;
   flex-basis: 600px !important;
   flex-wrap: wrap;
@@ -155,11 +157,11 @@
     height: 40px;
     border: none !important;
     font-family: "Comfortaa" !important;
-    width: 320px !important;
+    width: 90% !important;
     margin-left: -10px;
   }
   button {
-    width: 90px;
+    width: 100px;
     height: 40px;
     border: none !important;
     border-radius: 30px 30px 30px 30px !important;
@@ -170,6 +172,18 @@
     font-family: "Roboto" !important;
     text-align: center;
     transform: translateX(20px);
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 12px;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 12px;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 12px;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 12px;
   }
   .msg-alert {
     p {
@@ -195,6 +209,20 @@
       font-family: "Roboto" !important;
       font-size: 20px !important;
       font-weight: 400 !important;
+    }
+  }
+  .mailchimp-form{
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-size: 18px;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      font-size: 18px;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      font-size: 18px;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      font-size: 18px;
     }
   }
 }
@@ -280,7 +308,9 @@
     transform: translateY(650px) translateX(200px);
   }
   .signup-container {
+    display: flex;
     width: 425px;
+    justify-content: flex-start;
   }
 
   .mailchimp-form {
@@ -290,7 +320,7 @@
       height: 40px;
       border: none !important;
       font-family: "Comfortaa" !important;
-      width: 320px !important;
+      width: 400px !important;
       margin-left: -10px;
     }
     button {

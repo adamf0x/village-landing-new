@@ -17,13 +17,13 @@ const Hero = (props) => {
           </h2>
         </div>
         <div className="buttons">
-          <h3>Coming Soon</h3>
+          <p>Download now for FREE</p>
           <div className="inner-buttons">
-            <Button disabled>
-              <img src={appStoreButon} width={150}></img>
+            <Button>
+              <a href="https://apps.apple.com/ca/app/village/id1549408764"><img src={appStoreButon} width={150}></img></a>
             </Button>
-            <Button disabled> 
-              <img src={googlePlayButton} width={150}></img>
+            <Button> 
+              <a href="http://play.google.com/store/apps/details?id=co.atomic47.village.android"><img src={googlePlayButton} width={150}></img></a>
             </Button>
           </div>
         </div>

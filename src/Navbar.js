@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Navbar,
   Nav,
@@ -28,7 +28,7 @@ const Navigation = (props) => {
             <Nav.Link onClick={()=>{animateScroll.scrollToTop()}}><FontAwesomeIcon icon={faHome} size={"2x"}/></Nav.Link>
             <Nav.Link><Link href="#our-story" to="our-story" offset={-300} smooth>Our Story</Link></Nav.Link>
             <Nav.Link><Link href="the-app" to="the-app" offset={-400} smooth>The App</Link></Nav.Link>
-            <Nav.Link><Link href="try-it" to="try-it" offset={-500} smooth>Try It!</Link></Nav.Link>
+            <Nav.Link ><Link onClick={(e)=>{props.openDownloadModal(); console.log('clicked')}} href="try-it" to="try-it" offset={-500} smooth>Try It!</Link></Nav.Link>
             <div className="icons">
               <Nav.Link href="https://www.fb.com/thevillageapp.co"><FontAwesomeIcon icon={faFacebookF}/></Nav.Link>
               <Nav.Link href="https://www.Instagram.com/thevillageapp.co"><FontAwesomeIcon icon={faInstagram}/></Nav.Link>
