@@ -23,7 +23,7 @@ const CurbitSection2 = (props) => {
           <div className="curbit-image-flex">
             <img className="mobile-image" src={iphoneMock1}></img>
           </div>
-          <div className="curbit-section-container-1">
+          <div className="curbit-section-container-1" id="participate">
             <div className="curbit-section-text">
               <h1 className="list-header">{props.headerText}</h1>
               <div>

@@ -10,6 +10,15 @@ import HeroImage from "./images/Group 611.png"
 import HeroImage2 from "./images/Group 559.png"
 
 const CurbitHero = (props) => {
+  function clickHandler(e, href) {
+    const hrefValue = href;
+    const offsetTop = document.querySelector(hrefValue)?.offsetTop - 150;
+    e.target.classList.add("active");
+    window.scroll({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }
   return (
     <div className="curbit-hero-container-outer">
       <div className="text-content">
@@ -25,7 +34,7 @@ const CurbitHero = (props) => {
             The Village App is excited to host Curb It; a city-wide event where
             neighbours put free items on their curb for others to pick up.
           </h4>
-          <button>How To Participate</button>
+          <button onClick={(e)=>{clickHandler(e, '#participate')}}>How To Participate</button>
         </div>
       </div>
       <div className="curbit-hero-image-container">
