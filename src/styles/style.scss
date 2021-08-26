@@ -12,6 +12,11 @@
 @import "_curbitSection";
 @import "_partners";
 
+
+a:hover{
+  text-decoration: underline !important;
+}
+
 .modal-content {
   background-color: #29b1ad;
   display: flex;
