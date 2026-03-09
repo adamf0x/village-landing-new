@@ -1,5 +1,3 @@
-import React from "react";
-import image from "./images/4-cropped.png";
 import hex from "./images/hex.png";
 import hex3 from "./images/hex3.png";
 import { Button } from "react-bootstrap";
@@ -19,7 +17,6 @@ const Section = (props) => {
           <Button
             className="get-started-button"
             onClick={() => {
-              console.log("hello");
             }}
           >
             Get Started!

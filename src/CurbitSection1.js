@@ -1,12 +1,4 @@
-import { Button } from "react-bootstrap";
-import React from "react";
-import image from "./images/4-cropped.png";
-import womenOnCouch from "./images/women-on-couch-hero.png";
-import appStoreButon from "./images/AppStore-btn.png";
-import googlePlayButton from "./images/PlayStore-btn.png";
-import requestSample from "./images/Request-medium.png";
-
-const CurbitSection1 = (props) => {
+const CurbitSection1 = () => {
   return (
     <div className="curbit-section1-container-outer">
       <div className="curbit-section-header">

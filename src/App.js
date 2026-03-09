@@ -1,25 +1,21 @@
-import logo from "./logo.svg";
 import Navigation from "./Navbar";
 import Hero from "./Hero";
 import Section from "./Section";
-import SectionTwo, { Signup } from "./SectionTwo";
+import SectionTwo from "./SectionTwo";
 import Faq from "./Faq";
 import Team from "./TeamMembers";
 import womenOnCouch from "./images/women-on-couch.png";
-import menInGarden from "./images/men-in-garden.png";
 import Explanation from "./Explanation";
 import olderWoman from "./images/older-woman.png";
 import groupOfPeople from "./images/group-of-people.png";
 import family from "./images/family.png";
 import Footer from "./Footer";
-import { React, useEffect, useState } from "react";
-import useWindowDimensions from "./GetWindowDimensions";
+import { useEffect, useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import appStoreButon from "./images/AppStore-btn.png";
 import googlePlayButton from "./images/PlayStore-btn.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CurbitHero from "./CurbitHero";
-import CurbitSection1 from "./CurbitSection1";
 import CurbitSection2 from "./CurbitSection2";
 import Partners from "./Partners";
 import MamasLogo from "./images/Mamas-Logo-01.png";
@@ -27,17 +23,15 @@ import KarisLogo from "./images/karis-society.png";
 import HiSLogo from "./images/HiS-Logo-Transparent-2015-05-05-1-1.png";
 
 function App() {
-  const { width, height } = useWindowDimensions();
   const [loading, isLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       isLoading(false);
-    }, 2000);
+    }, 1000);
   }, [Hero, Navigation]);
 
   const [downloadModal, setDownloadModal] = useState(false);
   const openDownloadModal = () => {
-    console.log("here");
     setDownloadModal(true);
   };
 
@@ -88,14 +82,10 @@ function App() {
             <p>Download now for FREE</p>
             <div className="inner-buttons">
               <Button>
-                <a href="https://apps.apple.com/ca/app/village/id1549408764">
-                  <img src={appStoreButon} width={150}></img>
-                </a>
+                <img src={appStoreButon} width={150} href="https://apps.apple.com/ca/app/village/id1549408764"></img>
               </Button>
               <Button>
-                <a href="http://play.google.com/store/apps/details?id=co.atomic47.village.android">
-                  <img src={googlePlayButton} width={150}></img>
-                </a>
+                <img src={googlePlayButton} width={150} href="http://play.google.com/store/apps/details?id=co.atomic47.village.android"></img>
               </Button>
             </div>
           </div>
@@ -200,33 +190,21 @@ function App() {
                     name: "Mamas For Mamas",
                     addressline1: "1735 Dolphin Ave Unit 120,",
                     addressline2: "Kelowna, BC, V1Y 8A6",
-                    addressline3: "(236) 420-0075",
-                    description:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla efficitur nisl quis suscipit. Praesent venenatis blandit interdum. Nulla facilisi.",
-                    needs:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla efficitur nisl quis suscipit. Praesent venenatis blandit interdum. Nulla facilisi.",
+                    addressline3: "(236) 420-0075"
                   },
                   {
                     logo: KarisLogo,
                     name: "Karis Support Society",
                     addressline1: "550 Rowcliffe Ave,",
                     addressline2: "Kelowna, BC, V1Y 5Y9",
-                    addressline3: "(250) 860-9507",
-                    description:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla efficitur nisl quis suscipit. Praesent venenatis blandit interdum. Nulla facilisi.",
-                    needs:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla efficitur nisl quis suscipit. Praesent venenatis blandit interdum. Nulla facilisi.",
+                    addressline3: "(250) 860-9507"
                   },
                   {
                     logo: HiSLogo,
                     name: "Hands In Service",
                     addressline1: "1889 Springfield Rd. #206,",
                     addressline2: "Kelowna, BC, V1Y 5V5",
-                    addressline3: "(250) 861-5465",
-                    description:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla efficitur nisl quis suscipit. Praesent venenatis blandit interdum. Nulla facilisi.",
-                    needs:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla efficitur nisl quis suscipit. Praesent venenatis blandit interdum. Nulla facilisi.",
+                    addressline3: "(250) 861-5465"
                   },
                 ]}
               ></Partners>

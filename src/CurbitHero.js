@@ -1,15 +1,7 @@
-import { Button } from "react-bootstrap";
-import React from "react";
-import image from "./images/4-cropped.png";
-import womenOnCouch from "./images/women-on-couch-hero.png";
-import appStoreButon from "./images/AppStore-btn.png";
-import googlePlayButton from "./images/PlayStore-btn.png";
-import requestSample from "./images/Request-medium.png";
-import hex3 from "./images/hex3.png";
 import HeroImage from "./images/Group 611.png"
 import HeroImage2 from "./images/Group 559.png"
 
-const CurbitHero = (props) => {
+const CurbitHero = () => {
   function clickHandler(e, href) {
     const hrefValue = href;
     const offsetTop = document.querySelector(hrefValue)?.offsetTop - 150;

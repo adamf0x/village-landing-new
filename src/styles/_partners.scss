@@ -2,6 +2,12 @@
   margin-bottom: 10%;
 }
 
+.partners-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .partner-container{
   display: flex;
   flex-direction: column;

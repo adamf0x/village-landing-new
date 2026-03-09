@@ -1,14 +1,9 @@
-import { React, useEffect, useState, useRef } from "react";
-import image from "./images/4-cropped.png";
-import youtubeIcon from "./images/yt_icon_mono_dark.png";
-import youtubeThumbnail from "./images/youtube-thumbnail.png";
+import { useState } from "react";
 import { Card, Accordion } from "react-bootstrap";
 import hex from "./images/hex.png";
-import hex3 from "./images/hex3.png";
 
-import placeholder from "./images/Village-iPhoneMock.png";
 
-const Faq = (props) => {
+const Faq = () => {
   const [expand, setExpand] = useState("none");
   return (
     <div className="FAQ-container-outer">

@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import image from "./images/4-cropped.png";
 import youtubeIcon from "./images/yt_icon_mono_dark.png";
 import youtubeThumbnail from "./images/youtube-thumbnail.png";
-import { Button, Modal, Container, Row, Col, Card } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import feature1 from "./images/Feature-Request.png";
 import feature2 from "./images/Feature-FriendFinder.png";
 import feature3 from "./images/Feature-Chat.png";

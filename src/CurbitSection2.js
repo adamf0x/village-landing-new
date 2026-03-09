@@ -1,10 +1,3 @@
-import { Button } from "react-bootstrap";
-import React from "react";
-import image from "./images/4-cropped.png";
-import womenOnCouch from "./images/women-on-couch-hero.png";
-import appStoreButon from "./images/AppStore-btn.png";
-import googlePlayButton from "./images/PlayStore-btn.png";
-import requestSample from "./images/Request-medium.png";
 import iphoneMock1 from "./images/Group 612.png";
 import iphoneMock2 from "./images/Group 600.png";
 import sectionImage from "./images/Group 607.png";

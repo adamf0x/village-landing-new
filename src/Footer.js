@@ -1,21 +1,16 @@
-import React, { useState } from "react";
-import image from "./images/4-cropped.png";
-import hex from "./images/hex.png";
-import hex3 from "./images/hex3.png";
+import { useState } from "react";
 import { Signup } from "./SectionTwo";
-import { Button } from "react-bootstrap";
 import footerLogo from "./images/Village-logo-footer.png";
-import { animateScroll, Events, Link } from "react-scroll";
+import { animateScroll, Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faInstagram,
   faFacebookF,
 } from "@fortawesome/free-brands-svg-icons";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import {Nav, Modal} from "react-bootstrap"
+import { Modal } from "react-bootstrap"
 
-const Footer = (props) => {
+const Footer = () => {
   const [isOpen, setIsOpen] = useState(false)
   const handleClose=()=>{
     setIsOpen(false)

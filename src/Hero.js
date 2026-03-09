@@ -1,12 +1,10 @@
 import { Button } from "react-bootstrap";
-import React from "react";
-import image from "./images/4-cropped.png";
 import womenOnCouch from "./images/women-on-couch-hero.png";
 import appStoreButon from "./images/AppStore-btn.png";
 import googlePlayButton from "./images/PlayStore-btn.png";
 import requestSample from "./images/Request-medium.png";
 
-const Hero = (props) => {
+const Hero = () => {
   return (
     <div className="hero-container-outer">
       <div className="right-content">
