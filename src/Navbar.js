@@ -26,11 +26,11 @@ const Navigation = (props) => {
             <Nav.Link onClick={()=>{animateScroll.scrollToTop()}}><FontAwesomeIcon icon={faHome} size={"2x"}/></Nav.Link>
             <Nav.Link><Link href="#our-story" to="our-story" offset={-300} smooth>Our Story</Link></Nav.Link>
             <Nav.Link><Link href="the-app" to="the-app" offset={-400} smooth>The App</Link></Nav.Link>
-            <Nav.Link href="/events">Curb It!</Nav.Link>
+            <Nav.Link href="/village-landing-new/events">Curb It!</Nav.Link>
             <Nav.Link ><Link onClick={()=>{props.openDownloadModal();}} href="try-it" to="try-it" offset={-500} smooth>Try It!</Link></Nav.Link>
             </>:
              <>
-             <Nav.Link  href="/" onClick={()=>{animateScroll.scrollToTop()}}><FontAwesomeIcon icon={faHome} size={"2x"}/></Nav.Link>
+             <Nav.Link  href="/village-landing-new" onClick={()=>{animateScroll.scrollToTop()}}><FontAwesomeIcon icon={faHome} size={"2x"}/></Nav.Link>
              <Nav.Link href="/#our-story">Our Story</Nav.Link>
              <Nav.Link href="/#the-app">The App</Nav.Link>
              <Nav.Link onClick={()=>{animateScroll.scrollToTop()}}>Curb It!</Nav.Link>

@@ -91,10 +91,10 @@ function App() {
           </div>
         </Modal>
       )}
-      <Navigation openDownloadModal={openDownloadModal}></Navigation>
+      <Navigation openDownloadModal={openDownloadModal}/>
       <Switch>
         <div className="app-container">
-          <Route path="/" exact>
+          <Route path="/village-landing-new" exact>
             <div className="item-a">
               <Hero />
             </div>
@@ -110,8 +110,6 @@ function App() {
                 shapesConfig={1}
               />
             </div>
-            {/* <div className="divider"></div>
-            <div className="divider"></div> */}
             <div className="divider"></div>
             <div className="divider"></div>
             <div className="item-c" id="your-people">
@@ -175,7 +173,7 @@ function App() {
               <Footer />
             </div>
           </Route>
-          <Route path="/events" exact>
+          <Route path="/village-landing-new/events" exact>
             <div className="events-container">
               <CurbitHero></CurbitHero>
               <CurbitSection2
