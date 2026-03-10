@@ -1,6 +1,7 @@
 {
   "name": "village-landing",
   "version": "0.1.0",
+  "homepage": "https://adamf0x.github.io/village-landing",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -49,6 +50,5 @@
   "devDependencies": {
     "ajv": "^7.2.4",
     "gh-pages": "^6.3.0"
-  },
-  "homepage": "https:/adamf0x.github.io/village-website"
+  }
 }
