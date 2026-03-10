@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/village-landing-new/static/css/main.1c44885d.css",
-    "main.js": "/village-landing-new/static/js/main.f65007c0.js",
+    "main.js": "/village-landing-new/static/js/main.9a97c112.js",
     "static/js/453.d2b5b494.chunk.js": "/village-landing-new/static/js/453.d2b5b494.chunk.js",
     "static/media/family.png": "/village-landing-new/static/media/family.74010834edef575e647e.png",
     "static/media/Group 607.png": "/village-landing-new/static/media/Group 607.2e64302ef02945e7e772.png",
@@ -22,11 +22,11 @@
     "static/media/Mamas-Logo-01.png": "/village-landing-new/static/media/Mamas-Logo-01.c21579b89b99c51de69f.png",
     "index.html": "/village-landing-new/index.html",
     "main.1c44885d.css.map": "/village-landing-new/static/css/main.1c44885d.css.map",
-    "main.f65007c0.js.map": "/village-landing-new/static/js/main.f65007c0.js.map",
+    "main.9a97c112.js.map": "/village-landing-new/static/js/main.9a97c112.js.map",
     "453.d2b5b494.chunk.js.map": "/village-landing-new/static/js/453.d2b5b494.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c44885d.css",
-    "static/js/main.f65007c0.js"
+    "static/js/main.9a97c112.js"
   ]
 }
